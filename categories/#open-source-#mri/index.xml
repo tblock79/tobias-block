@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>#Open-Source #Mri on Kai Tobias Block</title>
+    <link>http://localhost:1313/categories/%23open-source-%23mri/</link>
+    <description>Recent content in #Open-Source #Mri on Kai Tobias Block</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/categories/%23open-source-%23mri/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MRI4ALL</title>
+      <link>http://localhost:1313/projects/mri4all/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/mri4all/</guid>
+      <description>Goal of the MRI4ALL Hackathon, which took place in October 2023, was to jointly develop a fully-fledged low-field MRI scanner in just 4 days and to release all developed resources as open-source packages, so that other groups can utilize them for own projects. 52 researchers from 16 different institutions participated in the hackathon and created a scanner named &amp;ldquo;Zeugmatron Z1&amp;rdquo; - in reference to the term &amp;ldquo;Zeugmatography&amp;rdquo; that was initially used by Nobel-price winner Paul Lauterbur when he invented MRI.</description>
+    </item>
+    <item>
+      <title>GRAVIS</title>
+      <link>http://localhost:1313/projects/gravis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/gravis/</guid>
+      <description>GRAVIS is a web-based open-source visualization and annotation tool designed for use with large, multi-dimensional DICOM datasets. It was designed to display GRASP datasets reconstructed at high time resolutions without undue latency or processing delays.&#xA;Digital subtraction angiography (DSA) with direct catheterization is currently the gold standard for mapping abnormalities of the brain’s vascular system, such as arteriovenous malformations, dural arteriovenous fistulae, or aneurysms. The invasiveness of DSA, however, introduces well-recognized risks to the fragile cerebral vasculature.</description>
+    </item>
+    <item>
+      <title>Yarra</title>
+      <link>http://localhost:1313/projects/yarra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/yarra/</guid>
+      <description>The Yarra Framework is a collection of open-source software tools developed to simplify the process of developing, evaluating, and translating novel magnetic resonance imaging (MRI) reconstruction techniques into clinical practice. It is provided free-of-charge for non-commercial purpose under the GPLv3 license. The tools can be used synergistically together, or they can be used individually as stand-alone components.&#xA;The &amp;ldquo;Yarra Raw-Data Service&amp;rdquo; (RDS) offers automatic collection of raw k-space data. It runs as background process on the host computers of Siemens MRI scanners and performs a nightly raw-data export of requested scan protocols into project folders on a network share or USB drive.</description>
+    </item>
+    <item>
+      <title>Yarra LogServer</title>
+      <link>http://localhost:1313/projects/yarralogserver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/yarralogserver/</guid>
+      <description>Yarra LogServer is an add-on component to the Yarra Framework, which allows collecting clinical workflow data from all MRI scanners across the enterprise. After installation of the software in the intranet, the Yarra RDS Clients running on the different MRI scanners send information about all performed exam protocols and sequences to the LogServer, where the data gets aggregated and stored in a central database. The transfer of workflow data happens automatically every hour without impact on the clinical operation.</description>
+    </item>
+    <item>
+      <title>YarraCloud</title>
+      <link>http://localhost:1313/projects/yarracloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/yarracloud/</guid>
+      <description>YarraCloud is a cloud-driven reconstruction service for offering computationally intensive MRI reconstruction algorithms to imaging centers that lack the resources to operate own HPC or GPU servers onsite. It integrates seamlessly into the Yarra offline reconstruction (ORT) client, so that end users experience no difference if reconstructions run locally or in the cloud.&#xA;Upload of raw data into the cloud and download of the reconstructed images is performed automatically by the &amp;ldquo;YarraCloud Agent&amp;rdquo;, which is running as background task on the MRI host system.</description>
+    </item>
+  </channel>
+</rss>

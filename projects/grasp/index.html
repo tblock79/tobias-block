@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kai Tobias Block</title>
+  <meta name="description" content="Personal website of Kai Tobias Block with information about research projects, publications, and scientific talks.">
+  <meta name="keywords" content="MRI, magnetic resonance, open-source, software, mercure, GRAVIS, Yarra, MRI4ALL, radial sampling, DICOM, AI, GRASP, EMC, MRT, research, science">
+  <meta name="author" content="Kai Tobias Block">
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/site.webmanifest">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body class="custom-scroll">
+
+<div class="flex-wrapper">
+  <div>
+    <nav class="navbar navbar-expand-lg fixed-top pt-4"
+      style="padding-bottom: 20px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);"
+      aria-label="Navbar">
+      <div class="container-xl">
+        <a class="navbar-brand" href="/projects">Kai Tobias Block</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+          aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation"
+          style="padding-inline: 0px;">
+          <input class="menu-trigger hidden" id="togglenav" type="checkbox" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"/>
+          <label class="burger-wrapper" for="togglenav">
+            <div class="hamburger"></div>
+          </label>            
+        </button>        
+        
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/publications/journals">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/talks/selected">Talks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-xl" style="margin-top: 140px;">
+      <div class="row">
+        <div class="col">
+
+<h1>Projects</h1>
+<nav class="nav submenu">
+  <li class="nav-item">
+    <a class="nav-link" href="#" onclick="history.back()"><i class="bi bi-arrow-left me-2"></i>Back</a>
+  </li>
+</nav>
+
+<h3 class="mb-4" style="margin-top: 40px;"> GRASP DCE-MRI Technique </h3>
+<table class="project-table">
+<tr><td class="project-table-td">Duration:</td><td>2011 - current</td></tr>
+ <tr><td class="project-table-td">Technologies:</td><td>C&#43;&#43;, Matlab</td></tr> 
+ <tr><td class="project-table-td">Collaborators:</td><td>Li Feng, Robert Grimm, Riccardo Otazo, Hersh Chandarana</td></tr> 
+ <tr><td class="project-table-td">Website:</td><td><a href="http://siemens-healthineers.com/magnetic-resonance-imaging/options-and-upgrades/clinical-applications/compressed-sensing-grasp-vibe" target="_blank"> Siemens Healthineers </a></td></tr> 
+</table>
+
+<div class="project-content">
+<p>GRASP is an innovative technique for dynamic contrast enhanced MRI (DCE-MRI), which has been developed at the NYU Center for Biomedical Imaging. GRASP offers a significant simplification of the clinical workflow compared to traditional DCE-MRI methods and enables examination of patient populations who previously could not be imaged, such as pediatric, elderly, or very sick patients.</p>
+<div style="flex: right; border: none; background-color: #000;">
+<video autoplay loop muted class="liveview-video" style="max-width: 800px; margin-left: 30px; margin-right: 0px; margin-top: 4px; border: none; background-color: #FFF; border: none; outline: 2px solid white;
+outline-offset: -2px;">
+  <source src="/img/grasp_scheme.mp4" type="video/mp4">
+</video>
+</div>
+<p>The GRASP technique combines three technical principles. First, it uses a radial acquisition of k-space, based on the <a href="/projects/starvibe/">Radial-VIBE</a> sequence, which allows data acquisition while the subject continues to breath. This makes it possible to image patients who are unable to perform a breath hold (BH) during scans, as required by conventional MRI techniques. Second, instead of acquiring a series of separate scans that need to be precisely timed relative to the injection of the contrast agent, GRASP uses one continuous acquisition over several minutes during which the contrast agent is injected (typically 20 secs after the start of the scan). Because data is acquired continuously, the exact time of the injection becomes insignificant, eliminating a major error source of conventional exams. Third, the continuously acquired data is reconstruction with an <a href="/projects/iterative/">iterative reconstruction</a> procedure, which applies a Total Variation (TV) constraint along the temporal dimension (aka &ldquo;Compressed Sensing&rdquo;). This procedure, in effect, creates a &ldquo;movie&rdquo; of images from which the desired time frames can be selected and used for making the clinical diagnosis.<div style="float: left;">
+<video controls autoplay loop muted class="large-video liveview-video" style="max-width: 300px; margin-left: 0px; margin-right: 30px; margin-top: 6px; margin-bottom: 30px;">
+<source src="/img/grasp_video_peds2.mp4" type="video/mp4">
+</video></p>
+</div>
+<p>Moreover, because the radial data is acquired according to the golden-angle ordering scheme, the desired temporal footprint of the image frames can be selected retrospectively. This means that no upfront assumption needs to be made on the required temporal resolution, eliminating another common error source in investigative studies. Moreover, the property opens up opportunities for research studies, as exams acquired for clinical indications can be reprocessed at higher temporal resolution to extract information about the organ function. Therefore, it becomes feasible to generate both, dynamic images (for the regular clinical work) and perfusion images (for assessing the organ function) simultaneously from the same acquisition by processing the data multiple times with different reconstruction settings.</p>
+<p>The synergistic combination of these principles translates the previously very challenging DCE-MRI examinations, which required a high level of operator training and patient compliance, into a simple &ldquo;push-button procedure&rdquo; &ndash; without the need for patient instruction, breath-hold commands, or assessment of the recirculation time for calculating the required injection time. Due to the significant simplification of the workflow, GRASP quickly became a routinely used technique at NYU for applications in the abdomen and pelvis, but also for other body parts such as dynamic prostate imaging, dynamic neck imaging, and dynamic brain imaging for oncologic treatment planning. It was implemented into the routine imaging workflow at NYU using the <a href="/projects/yarra/">Yarra Framework</a> and used in over 200,000 patient examinations to date. Siemens Healthineers licensed the GRASP technique and offers an FDA-approved commercial implementation under the product name &ldquo;Compressed Sensing GRASP-VIBE&rdquo;.</p>
+<div style="display: flex; justify-content: center; clear: both; border: none; width: 100%;">
+<video controls autoplay loop muted class="large-video liveview-video" style="max-width: unset; margin-left: 0px; margin-top: 10px; margin-bottom: 30px;">
+  <source src="/img/grasp_video_peds.mp4" type="video/mp4">
+</video>
+</div>
+<p>Various extensions have been developed over the years, including the XD-GRASP technique that integrates a motion-compensation strategy into the reconstruction process. In XD-GRASP, the data is binned and sorted into extra motion dimensions, e.g. a respiratory dimension for abdominal scans, or a respiratory + cardiac dimension for scans of the heart. The Total-Variation constraint is then applied along these newly created dimensions (instead of along the time dimension, as in regular GRASP). In this way, multi-dimensional datasets are created, which not only provide motion compensation but also allow extracting complementary information from the observed motion patterns (e.g., the trajectory of a tumor during the respiratory cycle, or the motion of the interventricular septum during respiration). Besides these technical extensions, GRASP has been utilized in numerous exploratory research applications, such as dynamic brain MR angiography at high spatial and sub-second temporal resolution. It has also become a key technology for examining pediatric and neonatal patients without the use of sedation or anesthesia, which by itself results in a major simplification of the clinical examination workflow and reduces health risks to patients.</p>
+<div style="display: flex; justify-content: center; clear: both; margin-top: 30px; border: none; width: 100%;">
+<video controls autoplay loop muted class="large-video liveview-video" style="max-width: unset; margin-left: 0px; margin-top: 4px;">
+  <source src="/img/grasp_video_mra.mp4" type="video/mp4">
+</video>
+</div>
+<div class="project-spacer"></div>
+<h5 id="references">References</h5>
+<div style="margin-top: 10px;"></div>
+<p>Block KT, Feng L, Grimm R, et al. GRASP: Tackling the Challenges of Abdominopelvic DCE-MRI. <a href="https://cdn0.scrvt.com/39b415fb07de4d9656c7b516d8e2d907/1800000001928394/979d62b454b3/Siemens_MRI_MAGNETOM-World_Case-Study_GRASP-Block_1800000001928394.pdf">MAGNETOM Flash 5/2014: 16-22</a></p>
+<p>Feng L, Grimm R, Block KT, et al. Golden-angle radial sparse parallel MRI: combination of compressed sensing, parallel imaging, and golden-angle radial sampling for fast and flexible dynamic volumetric MRI. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.24980">Magn Reson Med. 2014; 72(3):707-717</a></p>
+<p>Feng L, Axel L, Chandarana H, Block KT, Sodickson DK, Otazo R. XD-GRASP: Golden-angle radial MRI with reconstruction of extra motion-state dimensions using compressed sensing. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.25665">Magn Reson Med. 2016; 75(2):775-788</a></p>
+<p>Otazo R, Feng L, Block KT, Chandarana H, Axel, Sodickson DK. System, method and computer-accessible medium for highly-accelerated dynamic magnetic resonance imaging using golden-angle radial sampling and compressed sensing. Patent <a href="https://patentimages.storage.googleapis.com/b8/e2/16/e23489203c6bf6/US9921285.pdf">US 9,921,285 B2</a></p>
+<p>Block KT, Uecker M, Frahm J. Undersampled radial MRI with multiple coils. Iterative image reconstruction using a total variation constraint. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.21236">Magn Reson Med. 2007; 57(6):1086-1098</a></p>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+  var screenWidth = window.innerWidth;
+  if (screenWidth < 800) {        
+        var items = document.getElementsByClassName("large-video");
+        console.log(items)
+        for(var i = 0; i < items.length; i++) { 
+            items[i].removeAttribute("autoplay");
+        }
+  }
+});     
+</script>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><span class="bi bi-arrow-up"></span></button>
+  <footer class="pb-2" id="footer" style="padding-top: 60px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);">
+      <div class="container-xl" >
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="mb-1">©&nbsp;Copyright&nbsp;2026&nbsp;Kai&nbsp;Tobias&nbsp;Block</p>
+            </div>
+            <div class="col-sm-6 social text-md-end">
+              <a href="https://github.com/tblock79" target="_blank"><span class="bi bi-github"></span></a>
+              <a href="https://www.linkedin.com/in/kai-tobias-block" target="_blank"><span class="bi bi-linkedin"></span></a>
+              <a href="https://scholar.google.com/citations?user=cdpys2YAAAAJ" target="_blank"><span class="bi bi-google"></span></a>
+            </div>          
+          </div>
+        </div>      
+  </footer>
+</div>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

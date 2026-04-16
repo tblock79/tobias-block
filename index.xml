@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kai Tobias Block</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Kai Tobias Block</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mercure</title>
+      <link>http://localhost:1313/projects/mercure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/mercure/</guid>
+      <description>mercure is a flexible open-source DICOM orchestration platform, aimed to facilitate the clinical deployment of AI-based image processing algorithms, which poses a major obstacle for clinical real-world application of machine-learning techniques. It offers an intuitive web-based user interface as well as extensive monitoring options, making it suitable for routine applications that require high availability.&#xA;Received studies, transferred either from imaging devices such as CT or MRI scanners or from departmental image archives (PACS), are processed according to easily definable processing rules.</description>
+    </item>
+    <item>
+      <title>MRI4ALL</title>
+      <link>http://localhost:1313/projects/mri4all/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/mri4all/</guid>
+      <description>Goal of the MRI4ALL Hackathon, which took place in October 2023, was to jointly develop a fully-fledged low-field MRI scanner in just 4 days and to release all developed resources as open-source packages, so that other groups can utilize them for own projects. 52 researchers from 16 different institutions participated in the hackathon and created a scanner named &amp;ldquo;Zeugmatron Z1&amp;rdquo; - in reference to the term &amp;ldquo;Zeugmatography&amp;rdquo; that was initially used by Nobel-price winner Paul Lauterbur when he invented MRI.</description>
+    </item>
+    <item>
+      <title>GRAVIS</title>
+      <link>http://localhost:1313/projects/gravis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/gravis/</guid>
+      <description>GRAVIS is a web-based open-source visualization and annotation tool designed for use with large, multi-dimensional DICOM datasets. It was designed to display GRASP datasets reconstructed at high time resolutions without undue latency or processing delays.&#xA;Digital subtraction angiography (DSA) with direct catheterization is currently the gold standard for mapping abnormalities of the brain’s vascular system, such as arteriovenous malformations, dural arteriovenous fistulae, or aneurysms. The invasiveness of DSA, however, introduces well-recognized risks to the fragile cerebral vasculature.</description>
+    </item>
+    <item>
+      <title>GRASP</title>
+      <link>http://localhost:1313/projects/grasp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/grasp/</guid>
+      <description>GRASP is an innovative technique for dynamic contrast enhanced MRI (DCE-MRI), which has been developed at the NYU Center for Biomedical Imaging. GRASP offers a significant simplification of the clinical workflow compared to traditional DCE-MRI methods and enables examination of patient populations who previously could not be imaged, such as pediatric, elderly, or very sick patients.&#xA;The GRASP technique combines three technical principles. First, it uses a radial acquisition of k-space, based on the Radial-VIBE sequence, which allows data acquisition while the subject continues to breath.</description>
+    </item>
+    <item>
+      <title>Yarra</title>
+      <link>http://localhost:1313/projects/yarra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/yarra/</guid>
+      <description>The Yarra Framework is a collection of open-source software tools developed to simplify the process of developing, evaluating, and translating novel magnetic resonance imaging (MRI) reconstruction techniques into clinical practice. It is provided free-of-charge for non-commercial purpose under the GPLv3 license. The tools can be used synergistically together, or they can be used individually as stand-alone components.&#xA;The &amp;ldquo;Yarra Raw-Data Service&amp;rdquo; (RDS) offers automatic collection of raw k-space data. It runs as background process on the host computers of Siemens MRI scanners and performs a nightly raw-data export of requested scan protocols into project folders on a network share or USB drive.</description>
+    </item>
+    <item>
+      <title>LiveView</title>
+      <link>http://localhost:1313/projects/liveview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/liveview/</guid>
+      <description>LiveView is a real-time imaging technique for Siemens MRI systems that enables exploring physiological motion and function of organs in an ultrasound-alike fashion. Based on an interleaved radial acquisition of k-space, the sequence provides a continuous stream of images with a temporal resolution of up to 50 ms per frame.&#xA;When reconstructed on the scanner, a sliding-window gridding reconstruction with channel compression is performed to achieve near real-time image display with negligible latency.</description>
+    </item>
+    <item>
+      <title>CBIHub</title>
+      <link>http://localhost:1313/projects/cbihub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cbihub/</guid>
+      <description>CBIHub is a custom-developed intranet portal to improve the communication and knowledge exchange within the Center for Biomedical Imaging at NYU Langone Health. The need for the portal arose from the significant growth of the center over the last decade, which nowadays includes over 200 associated staff members who are located in different buildings in the NYC area.&#xA;To access the portal, CBI members must authenticate with their institutional Kerberos ID (SSO) and are directed to an overview page that summarizes all updates and news related to the center, including announcements, blog entries, events scheduled during the week, new colleagues, upcoming research seminars, and staff surveys.</description>
+    </item>
+    <item>
+      <title>Yarra LogServer</title>
+      <link>http://localhost:1313/projects/yarralogserver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/yarralogserver/</guid>
+      <description>Yarra LogServer is an add-on component to the Yarra Framework, which allows collecting clinical workflow data from all MRI scanners across the enterprise. After installation of the software in the intranet, the Yarra RDS Clients running on the different MRI scanners send information about all performed exam protocols and sequences to the LogServer, where the data gets aggregated and stored in a central database. The transfer of workflow data happens automatically every hour without impact on the clinical operation.</description>
+    </item>
+    <item>
+      <title>YarraCloud</title>
+      <link>http://localhost:1313/projects/yarracloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/yarracloud/</guid>
+      <description>YarraCloud is a cloud-driven reconstruction service for offering computationally intensive MRI reconstruction algorithms to imaging centers that lack the resources to operate own HPC or GPU servers onsite. It integrates seamlessly into the Yarra offline reconstruction (ORT) client, so that end users experience no difference if reconstructions run locally or in the cloud.&#xA;Upload of raw data into the cloud and download of the reconstructed images is performed automatically by the &amp;ldquo;YarraCloud Agent&amp;rdquo;, which is running as background task on the MRI host system.</description>
+    </item>
+    <item>
+      <title>EMC</title>
+      <link>http://localhost:1313/projects/emc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/emc/</guid>
+      <description>The Echo Modulation Curve (EMC) technique is a method for rapid and accurate mapping of the T2 relaxation time from multi spin-echo MRI acquisitions. EMC originated from prior work on model-based T2 estimation and replaces the analytical signal model with a dictionary of signal curves obtained through precise Bloch simulation of the acquisition sequence. Therefore, it accounts for effects such as stimulated echoes and achieves a much higher estimation accuracy than obtained with a simplified analytical model.</description>
+    </item>
+    <item>
+      <title>Non-Cartesian MRI</title>
+      <link>http://localhost:1313/projects/noncartesian/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/noncartesian/</guid>
+      <description>Illustration of the motion sensitivity of phase encoding: Object motion translates into bands of &#34;ghosting&#34; artifacts due to local violation of the Nyquist limit.&#xD;Most techniques for magnetic resonance imaging (MRI) sample the data space (&amp;ldquo;k-space&amp;rdquo;) using a row-by-row acquisition pattern known as &amp;ldquo;phase-encoding scheme&amp;rdquo;. This scheme is easy to implement, it is robust toward timing inaccuracies, and it offers various advantages including simplicity of the image reconstruction, which - in the basic form - just requires an inverse Fast Fourier Transformation (FFT) of the acquired data.</description>
+    </item>
+    <item>
+      <title>mtrk</title>
+      <link>http://localhost:1313/projects/mtrk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/mtrk/</guid>
+      <description>mtrk is a novel concept for simplifying the development, application, and distribution of MRI pulse sequences, which is currently under active development. It aims to tackle the major limitation that pulse sequences for clinical MRI systems are typically programmed as compiled binary libraries, which are then executed on the MRI scanners to generate the DSP instructions. Such libraries can only be written using vendor-provided proprietary SDKs and need to be installed locally on each scanner.</description>
+    </item>
+    <item>
+      <title>CAI2R</title>
+      <link>http://localhost:1313/projects/cai2r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cai2r/</guid>
+      <description>The Center for Advanced Imaging Innovation and Research (&amp;ldquo;CAI2R&amp;rdquo;) is a research unit within the Department of Radiology at NYU Langone Health under leadership of Principal Investigator Dr. Daniel K. Sodickson. It is supported by the National Institute of Biomedical Imaging and Bioengineering (NIBIB) through the P41 grant mechanism and recognized as National Center for Biomedical Imaging and Bioengineering (NCBIB).&#xA;Established in 2014 and currently in its third 5-year funding cycle, the center&amp;rsquo;s work focuses on developing new paradigms for the acquisition, reconstruction, and interpretation of biomedical imaging.</description>
+    </item>
+    <item>
+      <title>Iterative Reconstruction</title>
+      <link>http://localhost:1313/projects/iterative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/iterative/</guid>
+      <description>Magnetic resonance imaging (MRI) offers unique properties for imaging the human body in-vivo, including excellent soft-tissue contrast and absence of ionizing radiation. A key limitation, however, is that the data acquisition is relatively slow compared to other imaging modalities such as ultrasound. Because modern MRI scanners reach physiological limits of the viable switching speed, meaning that faster switching of the gradient fields for spatial encoding could induce (potentially harmful) nerve stimulation, alternative ways have been explored to shorten MRI scans.</description>
+    </item>
+    <item>
+      <title>StarVIBE</title>
+      <link>http://localhost:1313/projects/starvibe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/starvibe/</guid>
+      <description>StarVIBE&#xD;Conventional&#xD;The StarVIBE sequence is a volumetric T1-weighted MR imaging sequence that enables abdominal, pelvic, and thoracic examination while patients continue to breath. This property translates into higher diagnostic accuracy and significant simplification of the imaging workflow because traditional MRI techniques require subjects to hold breath during the scans, which often results in scan failures when imaging elderly, sick, and pediatric patients (or when examining individuals who do not speak the operator&amp;rsquo;s language or have impaired hearing).</description>
+    </item>
+    <item>
+      <title>measure</title>
+      <link>http://localhost:1313/projects/measure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/measure/</guid>
+      <description>measure is a software suite for conducting science experiments in STEM classes at the highschool and university level. It was developed on behalf of PHYWE Systeme GmbH, Göttingen. measure comprises a user-friendly Windows software for visualizing and analyzing acquired data, as well as numerous plugins for different PHYWE instruments and experimental setups. The base software can be used free-of-charge, while the device plugins require a paid license. The supported devices range from generic handheld instruments for measuring various physical units, over the modular Cobra3 system for computer-assisted experiments, to highly specialized instruments such as the PHYWE X-Ray Unit and a device for the Frank-Hertz-Experiment.</description>
+    </item>
+    <item>
+      <title>Conferences</title>
+      <link>http://localhost:1313/publications/conferences/</link>
+      <pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/conferences/</guid>
+      <description>2025 Correction of Respiratory Motion in Free-Breathing DCE-MRI using a Pilot-Tone Coil, In Proc. Intl. Soc. Mag. Reson. Med. 33 (2025): 1163&#xA;Motion detection using Doppler radar: Towards subject- and organ-specific motion correction, In Proc. Intl. Soc. Mag. Reson. Med. 33 (2025): 10301&#xA;Towards Free-Breathing Nodal Staging of Upper Abdominal Cancers: MRI-Visible Nodal Size Distributions and Uptake of USPIO Nanoparticles In Proc. Intl. Soc. Mag. Reson. Med. 33 (2025): 10214</description>
+    </item>
+    <item>
+      <title>Journals</title>
+      <link>http://localhost:1313/publications/journals/</link>
+      <pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/journals/</guid>
+      <description>2026 Correction of Respiratory Motion in Free-Breathing DCE-MRI using a Pilot-Tone Coil&#xA;Ruoxun Zi, Mario Bacher, Peter Speier, Hersh Chandarana, Riccardo Lattanzi, Kai Tobias Block&#xA;NMR in Biomedicine, 2026, in press&#xA;2025 mtrk - A Flexible Environment for Developing Open-Source MRI Pulse Sequences&#xA;Anais Artiges, Amanpreet Singh Saimbhi, Carlos Castillo-Passi, Riccardo Lattanzi, Kai Tobias Block&#xA;Magnetic Resonance in Medicine, 2025, advance online publication&#xA;3 Tesla Stack-of-Stars Echo Unbalanced T1 Relaxation-Enhanced Steady-State MRI for Brain Tumor Imaging: Post-Contrast Comparison with MPRAGE</description>
+    </item>
+    <item>
+      <title>Other</title>
+      <link>http://localhost:1313/publications/other/</link>
+      <pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/other/</guid>
+      <description>Theses Advanced Methods for Radial Data Sampling in Magnetic Resonance Imaging Institut für Numerische und Angewandte Mathematik der Georg-August-Universität Göttingen PhD thesis, 2008 Available online&#xA;Spiralförmige Abtastung des k-Raumes bei der Magnetresonanz-Tomographie Drittes Physikalisches Institut der Georg-August-Universität zu Göttingen Diploma thesis, 2004 Available online&#xA;Articles GRASP MRI: A Decade of Innovation from Bench to Bedside&#xA;Li Feng, Kai Tobias Block, Hersh Chandarana, Daniel K Sodickson&#xA;MAGNETOM Flash 6/2025: 22-35&#xA;Free-breathing DCE-MRI of the Kidney using GRASP</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>Contact Visit me on LinkedIn Email: mail@tobias-block.net&#xA;Phone: (+1) 347-824-6168&#xA;I currently reside in Berlin, Germany.&#xA;You can find me on LinkedIn and GitHub.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/resume/education/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/education/</guid>
+      <description>August 2005 - September 2008&#xD;University of Göttingen (Dr.rer.nat. / PhD)&#xD;Major:Mathematics&#xD;Thesis:Advanced Methods for Radial Data Sampling in Magnetic Resonance Imaging&#xD;Advisors:Prof. Dr. Jens Frahm, Prof. Dr. Robert Schaback&#xD;Grade:Summa Cum Laude&#xD;October 1999 - May 2004&#xD;University of Göttingen (Dipl.-Phys. / MSc)&#xD;Major:Physics&#xD;Thesis:Spiralförmige Abtastung des k-Raumes bei der Magnetresonanz-Tomographie&#xD;Advisors:Prof. Dr. Jens Frahm, Prof. Dr. Werner Lauterborn&#xD;Grade:“Sehr gut” (A)&#xD;August 1995 - July 1998&#xD;Halepaghen-Schule Buxtehude (Abitur)&#xD;Majors:Physics, Mathematics&#xD;Grade:1.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/resume/skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/skills/</guid>
+      <description>&#xD;Development&#xD;C/C++, Qt, QtCreator, Boost, Wt&#xD;JavaScript, Node.js, React&#xD;Alpine.js, htmx, jQuery&#xD;Python, Pydantic, NumPy, PyQt, PyTorch&#xD;Django, Starlette, Flask&#xD;HTML5, CSS, Bootstrap, Bulma&#xD;Hugo, WordPress, Drupal, PHP&#xD;Visual Studio Code&#xD;Git, GitHub, BitBucket&#xD;MATLAB, Delphi&#xD;Research Expertize&#xD;Medical Imaging&#xD;Magnetic Resonance Imaging&#xD;Clinical Technology Translation&#xD;Signal &amp;amp; Image Processing&#xD;Algorithm Design&#xD;Numerical Optimization&#xD;Software Engineering &amp;amp; Architecture&#xD;Management of Software Projects Deployment &amp;amp; Orchestration&#xD;Docker, Docker Compose&#xD;Kubernetes, Rancher&#xD;Vagrant&#xD;Amazon Web Services&#xD;Data Processing&#xD;SQL, PostgreSQL, SQLite&#xD;Redash, MetaBase&#xD;Graphite, Grafana&#xD;DICOM, dcmtk, Pydicom&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/resume/work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/work/</guid>
+      <description>&#xD;2025 - current&#xD;Software Engineer&#xD;Adjunct Associate Professor (NYU Langone Health)&#xD;Visage Imaging, Berlin&#xD;2011 - 2025&#xD;Associate Professor&#xD;Director of Software Engineering (CAI2R)&#xD;NYU Langone Health, New York&#xD;2020 - 2021&#xD;Senior Software Engineer&#xD;Siemens Healthineers, Erlangen&#xD;2009 - 2011&#xD;Senior Software Engineer&#xD;Siemens Healthcare, Erlangen&#xD;2005 - 2009&#xD;Research Scientist&#xD;Max Planck Institute for Biophysical Chemistry, Göttingen&#xD;2004 - 2005&#xD;Staff Scientist&#xD;Fraunhofer MeVis, Bremen&#xD;1997 - 2004&#xD;Founder&#xD;Seginus IT Solutions, Hamburg&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/talks/invited/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/invited/</guid>
+      <description>2024 Creating an Open-Source Low-Field MRI Scanner in Just One Week&#xA;How To Be An Academic Radiologist (HTBAR) Course 2024&#xA;Penn Medicine, Department of Radiology&#xA;4/9/24, Philadelphia, USA&#xA;2023 Experience from the MRI4ALL Hackathon 2023&#xA;MRI Together 2023 - A Global Workshop on Open and Reproducible Science&#xA;12/6/23, ESMRMB Virtual Conference&#xA;Watch online&#xA;2021 Decentralized Reconstruction in Academia&#xA;MRI Together - A Global Workshop on Open Science and Reproducible MR Research</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/talks/selected/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/selected/</guid>
+      <description>Data Platforms &amp;amp; Architecture Recorded during the plenary session “Challenging the Assumptions of MRI” at ISMRM 2018 in Paris.&#xA;Experience from the MRI4ALL Hackathon 2023 Recorded at &amp;ldquo;MRI Together 2023 - A global workshop on Open and Reproducible Science&amp;rdquo;.&#xA;Distributed Reconstruction in Academia Recorded at &amp;ldquo;MRI Together 2021 - A global workshop on Open Science and Reproducible MR Research&amp;rdquo;.&#xA;Creating New Value Through Innovation Recorded at the 2018 RSNA &amp;amp; ISMRM Joint Workshop on High-Value MRI in Washington DC.</description>
+    </item>
+  </channel>
+</rss>

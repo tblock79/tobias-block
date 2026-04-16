@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kai Tobias Block</title>
+    <link>http://localhost:1313/resume/</link>
+    <description>Recent content on Kai Tobias Block</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/resume/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/resume/education/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/education/</guid>
+      <description>August 2005 - September 2008&#xD;University of Göttingen (Dr.rer.nat. / PhD)&#xD;Major:Mathematics&#xD;Thesis:Advanced Methods for Radial Data Sampling in Magnetic Resonance Imaging&#xD;Advisors:Prof. Dr. Jens Frahm, Prof. Dr. Robert Schaback&#xD;Grade:Summa Cum Laude&#xD;October 1999 - May 2004&#xD;University of Göttingen (Dipl.-Phys. / MSc)&#xD;Major:Physics&#xD;Thesis:Spiralförmige Abtastung des k-Raumes bei der Magnetresonanz-Tomographie&#xD;Advisors:Prof. Dr. Jens Frahm, Prof. Dr. Werner Lauterborn&#xD;Grade:“Sehr gut” (A)&#xD;August 1995 - July 1998&#xD;Halepaghen-Schule Buxtehude (Abitur)&#xD;Majors:Physics, Mathematics&#xD;Grade:1.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/resume/skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/skills/</guid>
+      <description>&#xD;Development&#xD;C/C++, Qt, QtCreator, Boost, Wt&#xD;JavaScript, Node.js, React&#xD;Alpine.js, htmx, jQuery&#xD;Python, Pydantic, NumPy, PyQt, PyTorch&#xD;Django, Starlette, Flask&#xD;HTML5, CSS, Bootstrap, Bulma&#xD;Hugo, WordPress, Drupal, PHP&#xD;Visual Studio Code&#xD;Git, GitHub, BitBucket&#xD;MATLAB, Delphi&#xD;Research Expertize&#xD;Medical Imaging&#xD;Magnetic Resonance Imaging&#xD;Clinical Technology Translation&#xD;Signal &amp;amp; Image Processing&#xD;Algorithm Design&#xD;Numerical Optimization&#xD;Software Engineering &amp;amp; Architecture&#xD;Management of Software Projects Deployment &amp;amp; Orchestration&#xD;Docker, Docker Compose&#xD;Kubernetes, Rancher&#xD;Vagrant&#xD;Amazon Web Services&#xD;Data Processing&#xD;SQL, PostgreSQL, SQLite&#xD;Redash, MetaBase&#xD;Graphite, Grafana&#xD;DICOM, dcmtk, Pydicom&#xD;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/resume/work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/work/</guid>
+      <description>&#xD;2025 - current&#xD;Software Engineer&#xD;Adjunct Associate Professor (NYU Langone Health)&#xD;Visage Imaging, Berlin&#xD;2011 - 2025&#xD;Associate Professor&#xD;Director of Software Engineering (CAI2R)&#xD;NYU Langone Health, New York&#xD;2020 - 2021&#xD;Senior Software Engineer&#xD;Siemens Healthineers, Erlangen&#xD;2009 - 2011&#xD;Senior Software Engineer&#xD;Siemens Healthcare, Erlangen&#xD;2005 - 2009&#xD;Research Scientist&#xD;Max Planck Institute for Biophysical Chemistry, Göttingen&#xD;2004 - 2005&#xD;Staff Scientist&#xD;Fraunhofer MeVis, Bremen&#xD;1997 - 2004&#xD;Founder&#xD;Seginus IT Solutions, Hamburg&#xD;</description>
+    </item>
+  </channel>
+</rss>

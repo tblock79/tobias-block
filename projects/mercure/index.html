@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kai Tobias Block</title>
+  <meta name="description" content="Personal website of Kai Tobias Block with information about research projects, publications, and scientific talks.">
+  <meta name="keywords" content="MRI, magnetic resonance, open-source, software, mercure, GRAVIS, Yarra, MRI4ALL, radial sampling, DICOM, AI, GRASP, EMC, MRT, research, science">
+  <meta name="author" content="Kai Tobias Block">
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/site.webmanifest">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body class="custom-scroll">
+
+<div class="flex-wrapper">
+  <div>
+    <nav class="navbar navbar-expand-lg fixed-top pt-4"
+      style="padding-bottom: 20px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);"
+      aria-label="Navbar">
+      <div class="container-xl">
+        <a class="navbar-brand" href="/projects">Kai Tobias Block</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+          aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation"
+          style="padding-inline: 0px;">
+          <input class="menu-trigger hidden" id="togglenav" type="checkbox" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"/>
+          <label class="burger-wrapper" for="togglenav">
+            <div class="hamburger"></div>
+          </label>            
+        </button>        
+        
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/publications/journals">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/talks/selected">Talks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-xl" style="margin-top: 140px;">
+      <div class="row">
+        <div class="col">
+
+<h1>Projects</h1>
+<nav class="nav submenu">
+  <li class="nav-item">
+    <a class="nav-link" href="#" onclick="history.back()"><i class="bi bi-arrow-left me-2"></i>Back</a>
+  </li>
+</nav>
+
+<h3 class="mb-4" style="margin-top: 40px;"> mercure DICOM Orchestrator </h3>
+<table class="project-table">
+<tr><td class="project-table-td">Duration:</td><td>2019 - current</td></tr>
+ <tr><td class="project-table-td">Technologies:</td><td>Python, Docker, Starlette, PostgreSQL, Nomad</td></tr> 
+ <tr><td class="project-table-td">Collaborators:</td><td>Roy Wiggins, Amanpreet Singh Saimbhi</td></tr> 
+ <tr><td class="project-table-td">Website:</td><td><a href="http://mercure-imaging.org" target="_blank"> mercure-imaging.org </a></td></tr> 
+</table>
+
+<div class="project-content">
+<p>mercure is a flexible open-source DICOM orchestration platform, aimed to facilitate the clinical deployment of AI-based image processing algorithms, which poses a major obstacle for clinical real-world application of machine-learning techniques. It offers an intuitive web-based user interface as well as extensive monitoring options, making it suitable for routine applications that require high availability.</p>
+<p><img class="project_img img-right" src="/img/mercure_banner.jpg" style="max-width: 600px;">Received studies, transferred either from imaging devices such as CT or MRI scanners or from departmental image archives (PACS), are processed according to easily definable processing rules. Triggered rules can initiate one (or a chain of) processing operations as well as a subsequent dispatching step, e.g. to send the generated results to the image archive or to a reading workstation. Dispatching steps can also be used to transfer studies into the cloud for remote image analysis. mercure supports a range of different transfer protocols, including DICOM, DICOMweb, DICOM-TLS, S3, XNAT, SFTP, RSync, and folder storage.</p>
+<p>Processing operators are packaged as Docker containers, making it easy to integrate algorithms written in any programming language or framework, including common AI inference libraries. mercure also supports MONAI application packages (MAPs), allowing it to be used as platform for the deployment of models developed with <a href="https://monai.io/">MONAI</a>. Created modules can be distributed via the <a href="https://hub.docker.com/">Docker Hub</a> container registry, offering a simple mechanism to share algorithms and models within the community and ensuring that users automatically receive updates. Processing modules can be executed either locally on the mercure server or on cluster nodes, typically located on-premise or running as cloud instances.</p>
+<p><img class="project_img img-left noborder" src="/img/mercure_scheme.png" style="max-width: 500px;">In addition to dispatching of processing results, mercure provides notification mechanisms such as webhook calls to messaging services like Slack and email generation. Notifications can be used to alert about status updates and to inform users about findings that were generated by the processing modules. To this end, processing modules can indicate if a notification should be triggered and provide the message content. Moreover, structured results returned by processing modules are stored in mercure&rsquo;s internal database, which can be reviewed in mercure&rsquo;s web-based UI and queried using data analysis and visualization tools such as <a href="https://www.metabase.com/">Metabase</a>, <a href="https://redash.io/">Redash</a>, or <a href="https://superset.apache.org/">Superset</a>. This enables to automatically analyze large amounts of imaging data and explore cohort or population-level findings and trends, e.g. by utilizing radiomics techniques.</p>
+<p>mercure has been released under the non-restrictive MIT license. It has been designed for the Ubuntu operating system, but can also be used on other distributions when using a Docker-based installation. Automated installation of a test and development environment is possible using provided <a href="https://www.vagrantup.com/">Vagrant</a> configuration files.</p>
+<p>Possible use-cases for mercure include:</p>
+<ul>
+<li>Clinical evaluation of AI (or non-AI) image-processing prototypes during routine examinations</li>
+<li>Study-dependent routing of DICOM series to different analysis workstations or post-processing software</li>
+<li>Automated quality control (QA) of imaging exams (e.g., with real-time device feedback via the <a href="/projects/yarra">Yarra Mailbox</a> server)</li>
+<li>Collection of large-scale study data with integrated consistency checks and de-identification</li>
+<li>On-premise gateway for integration of cloud-based processing services</li>
+</ul>
+<div class="project-spacer"></div>
+<h5 id="more-information">More information</h5>
+<div class="projects-video-div ratio ratio-16x9">
+    <iframe class="talks-video embed-responsive-item" src="https://www.youtube.com/embed/LyJ4iQE1yLk?rel=0&amp;hd=1" allowfullscreen></iframe>
+</div>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><span class="bi bi-arrow-up"></span></button>
+  <footer class="pb-2" id="footer" style="padding-top: 60px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);">
+      <div class="container-xl" >
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="mb-1">©&nbsp;Copyright&nbsp;2026&nbsp;Kai&nbsp;Tobias&nbsp;Block</p>
+            </div>
+            <div class="col-sm-6 social text-md-end">
+              <a href="https://github.com/tblock79" target="_blank"><span class="bi bi-github"></span></a>
+              <a href="https://www.linkedin.com/in/kai-tobias-block" target="_blank"><span class="bi bi-linkedin"></span></a>
+              <a href="https://scholar.google.com/citations?user=cdpys2YAAAAJ" target="_blank"><span class="bi bi-google"></span></a>
+            </div>          
+          </div>
+        </div>      
+  </footer>
+</div>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

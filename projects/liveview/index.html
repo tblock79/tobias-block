@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kai Tobias Block</title>
+  <meta name="description" content="Personal website of Kai Tobias Block with information about research projects, publications, and scientific talks.">
+  <meta name="keywords" content="MRI, magnetic resonance, open-source, software, mercure, GRAVIS, Yarra, MRI4ALL, radial sampling, DICOM, AI, GRASP, EMC, MRT, research, science">
+  <meta name="author" content="Kai Tobias Block">
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/site.webmanifest">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body class="custom-scroll">
+
+<div class="flex-wrapper">
+  <div>
+    <nav class="navbar navbar-expand-lg fixed-top pt-4"
+      style="padding-bottom: 20px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);"
+      aria-label="Navbar">
+      <div class="container-xl">
+        <a class="navbar-brand" href="/projects">Kai Tobias Block</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+          aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation"
+          style="padding-inline: 0px;">
+          <input class="menu-trigger hidden" id="togglenav" type="checkbox" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"/>
+          <label class="burger-wrapper" for="togglenav">
+            <div class="hamburger"></div>
+          </label>            
+        </button>        
+        
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/publications/journals">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/talks/selected">Talks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-xl" style="margin-top: 140px;">
+      <div class="row">
+        <div class="col">
+
+<h1>Projects</h1>
+<nav class="nav submenu">
+  <li class="nav-item">
+    <a class="nav-link" href="#" onclick="history.back()"><i class="bi bi-arrow-left me-2"></i>Back</a>
+  </li>
+</nav>
+
+<h3 class="mb-4" style="margin-top: 40px;"> LiveView Real-Time MRI </h3>
+<table class="project-table">
+<tr><td class="project-table-td">Duration:</td><td>2010 - current</td></tr>
+ <tr><td class="project-table-td">Technologies:</td><td>C&#43;&#43;, IDEA, MATLAB</td></tr> 
+ <tr><td class="project-table-td">Collaborators:</td><td>Shuo Zhang, Jens Frahm, Thomas Benkert</td></tr> 
+
+</table>
+
+<div class="project-content">
+<div>
+<video controls autoplay loop muted class="liveview-video">
+  <source src="/img/liveview_demo1.mp4" type="video/mp4">
+</video>
+</div>
+<p>LiveView is a real-time imaging technique for Siemens MRI systems that enables exploring physiological motion and function of organs in an ultrasound-alike fashion. Based on an interleaved <a href="/projects/noncartesian/">radial</a> acquisition of k-space, the sequence provides a continuous stream of images with a temporal resolution of up to 50 ms per frame.</p>
+<p>When reconstructed on the scanner, a sliding-window gridding reconstruction with channel compression is performed to achieve near real-time image display with negligible latency. The slice position and orientation can be changed in the UI during the acquisition, allowing to interactively navigate through the patient. After the exam, the acquired data can be reprocessed with an <a href="/projects/iterative/">iterative reconstruction</a> scheme such as <a href="/projects/grasp/">GRASP</a> to achieve highest temporal fidelity without view-sharing.</p>
+<p>Over the years, the technique has been used for various applications, including imaging of speech and singing, dynamic imaging of joint motion, real-time cardiac cine imaging, studies of swallowing and temporomandibular joint (TMJ) disorders, as well as to acquire ground-truth data for motion correction techniques.</p>
+<div class="mt-5"></div>
+<h5 id="example-videos">Example videos</h5>
+<div class="d-flex flex-row flex-wrap mt-4">
+    <div class="liveview-demo me-3 mb-3">
+    <video controls autoplay loop muted class="liveview-video">
+    <source src="/img/liveview_demo5.mp4" type="video/mp4">
+    </video>
+    </div>    
+    <div class="liveview-demo me-3 mb-3">
+    <video controls autoplay loop muted class="liveview-video">
+    <source src="/img/liveview_demo2.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="liveview-demo me-3 mb-3">
+    <video controls autoplay loop muted class="liveview-video">
+    <source src="/img/liveview_demo3.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="liveview-demo me-3 mb-3">
+    <video controls autoplay loop muted class="liveview-video">
+    <source src="/img/liveview_demo4.mp4" type="video/mp4">
+    </video>
+    </div>
+</div>
+<div class="project-spacer"></div>
+<h5 id="more-examples">More examples</h5>
+<div class="projects-video-div ratio ratio-16x9">
+    <iframe class="talks-video embed-responsive-item" src="https://www.youtube.com/embed/J3TwTb-T044?rel=0&amp;hd=1" allowfullscreen></iframe>
+</div>
+<div class="projects-video-div ratio ratio-16x9">
+    <iframe class="talks-video embed-responsive-item" src="https://www.youtube.com/embed/jaIquq_4560?rel=0&amp;hd=1" allowfullscreen></iframe>
+</div>
+<div class="projects-video-div ratio ratio-16x9">
+    <iframe class="talks-video embed-responsive-item" src="https://www.youtube.com/embed/fsVAkJLx0QI?rel=0&amp;hd=1" allowfullscreen></iframe>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+  var screenWidth = window.innerWidth;
+  if (screenWidth < 800) {        
+        var items = document.getElementsByClassName("liveview-video");
+        console.log(items)
+        for(var i = 0; i < items.length; i++) { 
+            items[i].removeAttribute("autoplay");
+        }
+  }
+});     
+</script>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><span class="bi bi-arrow-up"></span></button>
+  <footer class="pb-2" id="footer" style="padding-top: 60px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);">
+      <div class="container-xl" >
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="mb-1">©&nbsp;Copyright&nbsp;2026&nbsp;Kai&nbsp;Tobias&nbsp;Block</p>
+            </div>
+            <div class="col-sm-6 social text-md-end">
+              <a href="https://github.com/tblock79" target="_blank"><span class="bi bi-github"></span></a>
+              <a href="https://www.linkedin.com/in/kai-tobias-block" target="_blank"><span class="bi bi-linkedin"></span></a>
+              <a href="https://scholar.google.com/citations?user=cdpys2YAAAAJ" target="_blank"><span class="bi bi-google"></span></a>
+            </div>          
+          </div>
+        </div>      
+  </footer>
+</div>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

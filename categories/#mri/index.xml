@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>#Mri on Kai Tobias Block</title>
+    <link>http://localhost:1313/categories/%23mri/</link>
+    <description>Recent content in #Mri on Kai Tobias Block</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/categories/%23mri/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GRASP</title>
+      <link>http://localhost:1313/projects/grasp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/grasp/</guid>
+      <description>GRASP is an innovative technique for dynamic contrast enhanced MRI (DCE-MRI), which has been developed at the NYU Center for Biomedical Imaging. GRASP offers a significant simplification of the clinical workflow compared to traditional DCE-MRI methods and enables examination of patient populations who previously could not be imaged, such as pediatric, elderly, or very sick patients.&#xA;The GRASP technique combines three technical principles. First, it uses a radial acquisition of k-space, based on the Radial-VIBE sequence, which allows data acquisition while the subject continues to breath.</description>
+    </item>
+    <item>
+      <title>LiveView</title>
+      <link>http://localhost:1313/projects/liveview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/liveview/</guid>
+      <description>LiveView is a real-time imaging technique for Siemens MRI systems that enables exploring physiological motion and function of organs in an ultrasound-alike fashion. Based on an interleaved radial acquisition of k-space, the sequence provides a continuous stream of images with a temporal resolution of up to 50 ms per frame.&#xA;When reconstructed on the scanner, a sliding-window gridding reconstruction with channel compression is performed to achieve near real-time image display with negligible latency.</description>
+    </item>
+    <item>
+      <title>EMC</title>
+      <link>http://localhost:1313/projects/emc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/emc/</guid>
+      <description>The Echo Modulation Curve (EMC) technique is a method for rapid and accurate mapping of the T2 relaxation time from multi spin-echo MRI acquisitions. EMC originated from prior work on model-based T2 estimation and replaces the analytical signal model with a dictionary of signal curves obtained through precise Bloch simulation of the acquisition sequence. Therefore, it accounts for effects such as stimulated echoes and achieves a much higher estimation accuracy than obtained with a simplified analytical model.</description>
+    </item>
+    <item>
+      <title>Non-Cartesian MRI</title>
+      <link>http://localhost:1313/projects/noncartesian/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/noncartesian/</guid>
+      <description>Illustration of the motion sensitivity of phase encoding: Object motion translates into bands of &#34;ghosting&#34; artifacts due to local violation of the Nyquist limit.&#xD;Most techniques for magnetic resonance imaging (MRI) sample the data space (&amp;ldquo;k-space&amp;rdquo;) using a row-by-row acquisition pattern known as &amp;ldquo;phase-encoding scheme&amp;rdquo;. This scheme is easy to implement, it is robust toward timing inaccuracies, and it offers various advantages including simplicity of the image reconstruction, which - in the basic form - just requires an inverse Fast Fourier Transformation (FFT) of the acquired data.</description>
+    </item>
+    <item>
+      <title>Iterative Reconstruction</title>
+      <link>http://localhost:1313/projects/iterative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/iterative/</guid>
+      <description>Magnetic resonance imaging (MRI) offers unique properties for imaging the human body in-vivo, including excellent soft-tissue contrast and absence of ionizing radiation. A key limitation, however, is that the data acquisition is relatively slow compared to other imaging modalities such as ultrasound. Because modern MRI scanners reach physiological limits of the viable switching speed, meaning that faster switching of the gradient fields for spatial encoding could induce (potentially harmful) nerve stimulation, alternative ways have been explored to shorten MRI scans.</description>
+    </item>
+    <item>
+      <title>StarVIBE</title>
+      <link>http://localhost:1313/projects/starvibe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/starvibe/</guid>
+      <description>StarVIBE&#xD;Conventional&#xD;The StarVIBE sequence is a volumetric T1-weighted MR imaging sequence that enables abdominal, pelvic, and thoracic examination while patients continue to breath. This property translates into higher diagnostic accuracy and significant simplification of the imaging workflow because traditional MRI techniques require subjects to hold breath during the scans, which often results in scan failures when imaging elderly, sick, and pediatric patients (or when examining individuals who do not speak the operator&amp;rsquo;s language or have impaired hearing).</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kai Tobias Block</title>
+  <meta name="description" content="Personal website of Kai Tobias Block with information about research projects, publications, and scientific talks.">
+  <meta name="keywords" content="MRI, magnetic resonance, open-source, software, mercure, GRAVIS, Yarra, MRI4ALL, radial sampling, DICOM, AI, GRASP, EMC, MRT, research, science">
+  <meta name="author" content="Kai Tobias Block">
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/site.webmanifest">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body class="custom-scroll">
+
+<div class="flex-wrapper">
+  <div>
+    <nav class="navbar navbar-expand-lg fixed-top pt-4"
+      style="padding-bottom: 20px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);"
+      aria-label="Navbar">
+      <div class="container-xl">
+        <a class="navbar-brand" href="/projects">Kai Tobias Block</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+          aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation"
+          style="padding-inline: 0px;">
+          <input class="menu-trigger hidden" id="togglenav" type="checkbox" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"/>
+          <label class="burger-wrapper" for="togglenav">
+            <div class="hamburger"></div>
+          </label>            
+        </button>        
+        
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/publications/journals">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/talks/selected">Talks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-xl" style="margin-top: 140px;">
+      <div class="row">
+        <div class="col">
+
+<h1>Projects</h1>
+<nav class="nav submenu">
+  <li class="nav-item">
+    <a class="nav-link" href="#" onclick="history.back()"><i class="bi bi-arrow-left me-2"></i>Back</a>
+  </li>
+</nav>
+
+<h3 class="mb-4" style="margin-top: 40px;"> mtrk - Sequence Development Framework </h3>
+<table class="project-table">
+<tr><td class="project-table-td">Duration:</td><td>2020 - current</td></tr>
+ <tr><td class="project-table-td">Technologies:</td><td>C&#43;&#43;, IDEA, Python, JavaScript</td></tr> 
+ <tr><td class="project-table-td">Collaborators:</td><td>Anais Artiges, Amanpreet Singh Saimbhi</td></tr> 
+ <tr><td class="project-table-td">Website:</td><td><a href="http://mtrk-dev.github.io" target="_blank"> mtrk-dev.github.io </a></td></tr> 
+</table>
+
+<div class="project-content">
+<p><img class="project_img img-right noborder" src="/img/mtrk_logo.jpg" style="max-width: 420px;">mtrk is a novel concept for simplifying the development, application, and distribution of MRI pulse sequences, which is currently under active development. It aims to tackle the major limitation that pulse sequences for clinical MRI systems are typically programmed as compiled binary libraries, which are then executed on the MRI scanners to generate the DSP instructions. Such libraries can only be written using vendor-provided proprietary SDKs and need to be installed locally on each scanner. The vendor SDKs, unfortunately, are very complex, barely documented, and only in part accessible to researchers and external developers because all vendors currently adhere to a proprietary closed-source development model. This makes MRI sequence development very challenging, and it significantly affects the productivity of the whole research field. On the one hand, only few researchers in the community have the required skills to successfully work with the SDKs. Especially students and researchers without extensive experience in software development often struggle with the complexity of the code base and toolchain. On the other hand, frequent invasive changes to the vendor SDKs create significant maintenance effort within research departments and limit the time that researchers can devote to new developments. Furthermore, the strict license agreements that vendors enforce make dissemination of research developments difficult and contend with the idea of reproducible research. Goal of the mtrk framework is to change the current paradigm toward a modern and flexible open-source model for MRI sequence development.</p>
+<p><img class="project_img img-left noborder" src="/img/mtrk_scheme.jpg" style="max-width: 550px;">Core element of mtrk is the Sequence Description Language (SDL), which is a formalism based on the commonly used JSON syntax to describe the events that the MRI scanner must execute when running a sequence. The SDL language is by design un-opinionated, meaning that multiple ways for formulating the same sequence exist. Moreover, the SDL language makes no assumption on how the SDL description should be generated. This gives researchers the freedom of choice regarding which language or toolset they want to use for their projects. In most cases, mtrk SDL files are created using a small generator program provided by the sequence developer. Any programming language can be used for such generator programs, as all modern languages can process JSON files. Some researchers might prefer MATLAB for implementing the sequence calculation, while others might prefer Python, Julia, or C/C++. Offering this flexibility and, in particular, supporting fully open-source toolchains is a key principle of mtrk and distinguishes the project from other sequence frameworks that still depend on commercial software.</p>
+<p>Generator programs can either be provided as command-line tool, stand-alone software, or even as web service. Because the SDL language is based on a common text-based format (JSON), the sequence calculation can be done on any operating system and on any computer, ranging from the MRI scanner’s console computer, over local research servers, to cloud instances. This ability to calculate sequences on remote computers breaks away from the traditional paradigm that all acquisition logic must be installed and managed locally on the MRI system and offers tremendous opportunities for improved fleet management, workflow optimization, and dissemination of innovations (“sequence as a service”). To deliver remotely calculated sequences with sufficient speed and reliability, a compact protocol is required that is suited for efficient transfer over TCP/IP connections. For this reason, the SDL language diverges from the format introduced by the Pulseq project, which can become very large for real-world clinical scan protocols. The SDL format instead provides flow-control elements such as loops, conditional blocks, and equations, and it also provides a concept for adapting sequences dynamically during runtime (if needed for real-time scanning applications). Moreover, the SDL format is human-readable (and even patchable by hand), which simplifies debugging of sequences.</p>
+<p>When executing an mtrk sequence, the MRI scanner unrolls the sequence description from the SDL file into a timeline and plays out the event stream. This is done by the mtrk Driver Sequence, which uses the vendor-provided SDK to translate the events into DSP instructions. Thus, the sequence logic is entirely defined by the SDL file and independent from the specific MRI software version used during data acquisition, which eliminates the need to refactor sequences for every software update installed on the MRI scanner. It also makes it possible to reproduce scientific results at later time or at different imaging sites because the SDL file is decoupled from the vendor SDK and can be archived or openly shared (e.g., in public Git repositories) without violating license agreements.</p>
+<p>The mtrk concept also adds transparency. Because all events and waveforms can be read from the SDL file, exact sequence simulations can be performed by running the instructions against a Bloch simulator, which enables automated testing and quality control of sequences. Furthermore, part of the sequence-development work can be shifted from sitting in front of an actual MRI scanner towards simulation-driven development. This is in stark contrast to the current situation with clinical MRI scanners, where compiled sequence binaries are basically “black boxes” that obscure the information on how sequence settings translate into DSP instructions. Therefore, it is, for example, impossible to determine if pulse shapes or timing schemes have changed after software updates, which introduces uncertainties when scanner updates are installed during ongoing clinical studies. Such issues are all avoided with the open mtrk sequence model.</p>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><span class="bi bi-arrow-up"></span></button>
+  <footer class="pb-2" id="footer" style="padding-top: 60px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);">
+      <div class="container-xl" >
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="mb-1">©&nbsp;Copyright&nbsp;2026&nbsp;Kai&nbsp;Tobias&nbsp;Block</p>
+            </div>
+            <div class="col-sm-6 social text-md-end">
+              <a href="https://github.com/tblock79" target="_blank"><span class="bi bi-github"></span></a>
+              <a href="https://www.linkedin.com/in/kai-tobias-block" target="_blank"><span class="bi bi-linkedin"></span></a>
+              <a href="https://scholar.google.com/citations?user=cdpys2YAAAAJ" target="_blank"><span class="bi bi-google"></span></a>
+            </div>          
+          </div>
+        </div>      
+  </footer>
+</div>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

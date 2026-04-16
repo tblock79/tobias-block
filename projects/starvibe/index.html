@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kai Tobias Block</title>
+  <meta name="description" content="Personal website of Kai Tobias Block with information about research projects, publications, and scientific talks.">
+  <meta name="keywords" content="MRI, magnetic resonance, open-source, software, mercure, GRAVIS, Yarra, MRI4ALL, radial sampling, DICOM, AI, GRASP, EMC, MRT, research, science">
+  <meta name="author" content="Kai Tobias Block">
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/site.webmanifest">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body class="custom-scroll">
+
+<div class="flex-wrapper">
+  <div>
+    <nav class="navbar navbar-expand-lg fixed-top pt-4"
+      style="padding-bottom: 20px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);"
+      aria-label="Navbar">
+      <div class="container-xl">
+        <a class="navbar-brand" href="/projects">Kai Tobias Block</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+          aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation"
+          style="padding-inline: 0px;">
+          <input class="menu-trigger hidden" id="togglenav" type="checkbox" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"/>
+          <label class="burger-wrapper" for="togglenav">
+            <div class="hamburger"></div>
+          </label>            
+        </button>        
+        
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/publications/journals">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/talks/selected">Talks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-xl" style="margin-top: 140px;">
+      <div class="row">
+        <div class="col">
+
+<h1>Projects</h1>
+<nav class="nav submenu">
+  <li class="nav-item">
+    <a class="nav-link" href="#" onclick="history.back()"><i class="bi bi-arrow-left me-2"></i>Back</a>
+  </li>
+</nav>
+
+<h3 class="mb-4" style="margin-top: 40px;"> StarVIBE / Radial-VIBE / RAVE Sequence </h3>
+<table class="project-table">
+<tr><td class="project-table-td">Duration:</td><td>2009 - current</td></tr>
+ <tr><td class="project-table-td">Technologies:</td><td>C&#43;&#43;, IDEA</td></tr> 
+ <tr><td class="project-table-td">Collaborators:</td><td>Thomas Benkert, Hersh Chandarana</td></tr> 
+
+</table>
+
+<div class="project-content">
+<div style="display:inline-block; border: 2px solid #000; margin-top: 4px; max-width: 460px;" class="toggleimage_container toggleimage_right">
+    <div style="display: inline-block; position: relative; height: 100%; width: 100%; ">
+        <img src="/img/starvibe_example1_b.jpg" alt="" class="toggleimage" style="display: inline-block; height: 100%; width: 100%;" id="example1_b">
+        <img src="/img/starvibe_example1_a.jpg" alt="" class="toggleimage fader" style="display: inline-block; z-index: 1;  height: 100%; width: 100%;" id="example1_a">
+        <div class="faderlabel fader fade-out" style="color: #FFF; z-index: 100;" id="example1_label">StarVIBE</div>
+        <div class="faderlabel fader fade-in" style="color: #FFF; z-index: 100;" id="example1_label2">Conventional</div>
+    </div>
+</div>
+
+<script>
+
+
+
+var pic_example1 = document.getElementById("example1_a");
+var label_example1 = document.getElementById("example1_label");
+var label2_example1 = document.getElementById("example1_label2");
+
+function fadeIn_example1()
+{
+    pic_example1.classList.remove("fade-out");
+    pic_example1.classList.add("fade-in");    
+    label_example1.classList.remove("fade-in");
+    label_example1.classList.add("fade-out");    
+    label2_example1.classList.remove("fade-out");
+    label2_example1.classList.add("fade-in");    
+    setTimeout(fadeOut_example1, 3000);
+}
+
+function fadeOut_example1()
+{
+    pic_example1.classList.remove("fade-in");
+    pic_example1.classList.add("fade-out"); 
+    label_example1.classList.remove("fade-out");
+    label_example1.classList.add("fade-in"); 
+    label2_example1.classList.remove("fade-in");
+    label2_example1.classList.add("fade-out"); 
+    setTimeout(fadeIn_example1, 3000);
+}
+
+setTimeout(fadeOut_example1, 2000 +  0  * 1000);
+</script>
+
+<p>The StarVIBE sequence is a volumetric T1-weighted MR imaging sequence that enables abdominal, pelvic, and thoracic examination while patients continue to breath. This property translates into higher diagnostic accuracy and significant simplification of the imaging workflow because traditional MRI techniques require subjects to hold breath during the scans, which often results in scan failures when imaging elderly, sick, and pediatric patients (or when examining individuals who do not speak the operator&rsquo;s language or have impaired hearing). The motion robustness is achieved through radial acquisition of the k-space data along a stack-of-stars trajectory, which prevents occurrence of MR-typical &ldquo;ghosting&rdquo; or &ldquo;aliasing&rdquo; effects and leads to an inherent motion-averaging effect.</p>
+<div style="display:inline-block; border: 2px solid #000; margin-top: 4px; max-width: 300px;" class="toggleimage_container toggleimage_left">
+    <div style="display: inline-block; position: relative; height: 100%; width: 100%; ">
+        <img src="/img/starvibe_example3_b.jpg" alt="" class="toggleimage" style="display: inline-block; height: 100%; width: 100%;" id="example3_b">
+        <img src="/img/starvibe_example3_a.jpg" alt="" class="toggleimage fader" style="display: inline-block; z-index: 1;  height: 100%; width: 100%;" id="example3_a">
+        <div class="faderlabel fader fade-out" style="color: #FFF; z-index: 100;" id="example3_label">StarVIBE</div>
+        <div class="faderlabel fader fade-in" style="color: #FFF; z-index: 100;" id="example3_label2">Conventional</div>
+    </div>
+</div>
+
+<script>
+
+
+
+var pic_example3 = document.getElementById("example3_a");
+var label_example3 = document.getElementById("example3_label");
+var label2_example3 = document.getElementById("example3_label2");
+
+function fadeIn_example3()
+{
+    pic_example3.classList.remove("fade-out");
+    pic_example3.classList.add("fade-in");    
+    label_example3.classList.remove("fade-in");
+    label_example3.classList.add("fade-out");    
+    label2_example3.classList.remove("fade-out");
+    label2_example3.classList.add("fade-in");    
+    setTimeout(fadeOut_example3, 3000);
+}
+
+function fadeOut_example3()
+{
+    pic_example3.classList.remove("fade-in");
+    pic_example3.classList.add("fade-out"); 
+    label_example3.classList.remove("fade-out");
+    label_example3.classList.add("fade-in"); 
+    label2_example3.classList.remove("fade-in");
+    label2_example3.classList.add("fade-out"); 
+    setTimeout(fadeIn_example3, 3000);
+}
+
+setTimeout(fadeOut_example3, 2000 +  1  * 1000);
+</script>
+
+<p>Initially developed as &ldquo;Radial-VIBE&rdquo; work-in-progress (WIP) package and later re-engineered under the name RAVE (RAdial Volumetric Encoding), the sequence has been extensively evaluated at NYU Langone Health for various clinical applications, ranging from abdominopelvic exams, over pediatric exams, to head and neck imaging. Due to the encouraging results from studies conducted at NYU and collaboration sites, Siemens Healthineers released the sequence as FDA-approved medical product in 2013 under the name <a href="https://cdn0.scrvt.com/39b415fb07de4d9656c7b516d8e2d907/1800000001647181/1cdf3bec3640/FREEZEit-New-Imaging_Techniques_to_Improve_Body_MR_Imaging_1800000001647181.pdf">StarVIBE</a>. <div style="display:inline-block; border: 2px solid #000; margin-top: 4px; max-width: 430px;" class="toggleimage_container toggleimage_right">
+    <div style="display: inline-block; position: relative; height: 100%; width: 100%; ">
+        <img src="/img/starvibe_example2_b.jpg" alt="" class="toggleimage" style="display: inline-block; height: 100%; width: 100%;" id="example2_b">
+        <img src="/img/starvibe_example2_a.jpg" alt="" class="toggleimage fader" style="display: inline-block; z-index: 1;  height: 100%; width: 100%;" id="example2_a">
+        <div class="faderlabel fader fade-out" style="color: #FFF; z-index: 100;" id="example2_label">StarVIBE</div>
+        <div class="faderlabel fader fade-in" style="color: #FFF; z-index: 100;" id="example2_label2">Conventional</div>
+    </div>
+</div>
+
+<script>
+
+
+
+var pic_example2 = document.getElementById("example2_a");
+var label_example2 = document.getElementById("example2_label");
+var label2_example2 = document.getElementById("example2_label2");
+
+function fadeIn_example2()
+{
+    pic_example2.classList.remove("fade-out");
+    pic_example2.classList.add("fade-in");    
+    label_example2.classList.remove("fade-in");
+    label_example2.classList.add("fade-out");    
+    label2_example2.classList.remove("fade-out");
+    label2_example2.classList.add("fade-in");    
+    setTimeout(fadeOut_example2, 3000);
+}
+
+function fadeOut_example2()
+{
+    pic_example2.classList.remove("fade-in");
+    pic_example2.classList.add("fade-out"); 
+    label_example2.classList.remove("fade-out");
+    label_example2.classList.add("fade-in"); 
+    label2_example2.classList.remove("fade-in");
+    label2_example2.classList.add("fade-out"); 
+    setTimeout(fadeIn_example2, 3000);
+}
+
+setTimeout(fadeOut_example2, 2000 +  2  * 1000);
+</script>
+
+In the meantime, also other MR vendors have adopted the technique and created comparable products, such as <a href="https://www.documents.philips.com/assets/20170523/347afbdfff9b4510b9c1a77c014f078c.pdf">3D VANE XD</a> (Philips Healthcare) and <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7232028/">LAVA Star</a> (GE Healthcare). The technique has become a widely accepted and routinely utilized solution for MRI examinations with limited patient cooperation.</p>
+<div class="project-spacer"></div>
+<h5 id="references">References</h5>
+<div style="margin-top: 10px;"></div>
+<p>Block KT, Chandarana H, Milla S, Bruno M, Mulholland T, Fatterpekar G, Hagiwara M, Grimm R, Geppert C, Kiefer B, Sodickson DK. Towards Routine Clinical Use of Radial Stack-of-Stars 3D Gradient-Echo Sequences for Reducing Motion Sensitivity. <a href="https://i-mri.org/pdf/10.13104/jksmrm.2014.18.2.87">J Korean Soc Magn Reson Med. 2014 Jun; 18(2):87-106</a></p>
+<p>Block KT, Chandarana H, Fatterpekar G, Hagiwara M, Milla S, Mulholland T, Bruno M, Geppert C, Sodickson DK. Improving the Robustness of Clinical T1-Weighted MRI Using Radial VIBE. <a href="https://cdn0.scrvt.com/39b415fb07de4d9656c7b516d8e2d907/1800000001176267/8856c5be1bf5/Improving_robustness_using_radial_VIBE_1800000001176267.pdf">MAGNETOM Flash 5/2013: 6-11</a></p>
+<p>Chandarana H, Block TK, Rosenkrantz AB, Lim RP, Kim D, Mossa DJ, Babb JS, Kiefer B, Lee VS. Free-breathing radial 3D fat-suppressed T1-weighted gradient echo sequence: a viable alternative for contrast-enhanced liver imaging in patients unable to suspend respiration. <a href="https://doi.org/10.1097/RLI.0b013e31821eea45">Invest Radiol. 2011 Oct; 46(10):648-53</a></p>
+<p>Chandarana H, Block KT, Winfeld MJ, Lala SV, Mazori D, Giuffrida E, Babb JS, Milla SS. Free-breathing contrast-enhanced T1-weighted gradient-echo imaging with radial k-space sampling for paediatric abdominopelvic MRI. <a href="https://dx.doi.org/10.1007/s00330-013-3026-4">Eur Radiol. 2014 Feb; 24(2):320-6</a></p>
+<p>Wu X, Raz E, Block TK, Geppert C, Hagiwara M, Bruno MT, Fatterpekar GM. Contrast-enhanced radial 3D fat-suppressed T1-weighted gradient-recalled echo sequence versus conventional fat-suppressed contrast-enhanced T1-weighted studies of the head and neck. <a href="https://www.ajronline.org/doi/10.2214/AJR.13.11729">AJR Am J Roentgenol. 2014 Oct; 203(4):883-9</a></p>
+<p>Rosenkrantz AB, Block TK, Hindman N, Vega E, Chandarana H. Combination of increased flip angle, radial k-space trajectory, and free breathing acquisition for improved detection of a biliary variant at living donor liver transplant evaluation using gadoxetic acid-enhanced MRCP. <a href="https://journals.lww.com/jcat/fulltext/2014/03000/combination_of_increased_flip_angle,_radial.22.aspx">J Comput Assist Tomogr. 2014 Mar-Apr; 38(2):277-80</a></p>
+<p>Bangiyev L, Raz E, Block TK, Hagiwara M, Wu X, Yu E, Fatterpekar GM. Evaluation of the orbit using contrast-enhanced radial 3D fat-suppressed T1 weighted gradient echo (Radial-VIBE) sequence. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4730962/">Br J Radiol. 2015 Oct;88(1054):20140863</a></p>
+<p>Hu HH, Benkert T, Smith M, Jones JY, McAllister AS, Rusin JA, Krishnamurthy R, Block KT. Post-contrast T1-weighted spine 3T MRI in children using a golden-angle radial acquisition. <a href="https://link.springer.com/article/10.1007/s00234-019-02165-5">Neuroradiology. 2019 Mar; 61(3):341-349</a></p>
+<p>Hu HH, Benkert T, Jones JY, McAllister AS, Rusin JA, Krishnamurthy R, Block KT. 3D T1-weighted contrast-enhanced brain MRI in children using a fat-suppressed golden angle radial acquisition: an alternative to Cartesian inversion-recovery imaging. <a href="https://linkinghub.elsevier.com/retrieve/pii/S0899-7071(19)30039-7">Clin Imaging. 2019 May-Jun; 55:112-118</a></p>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><span class="bi bi-arrow-up"></span></button>
+  <footer class="pb-2" id="footer" style="padding-top: 60px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);">
+      <div class="container-xl" >
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="mb-1">©&nbsp;Copyright&nbsp;2026&nbsp;Kai&nbsp;Tobias&nbsp;Block</p>
+            </div>
+            <div class="col-sm-6 social text-md-end">
+              <a href="https://github.com/tblock79" target="_blank"><span class="bi bi-github"></span></a>
+              <a href="https://www.linkedin.com/in/kai-tobias-block" target="_blank"><span class="bi bi-linkedin"></span></a>
+              <a href="https://scholar.google.com/citations?user=cdpys2YAAAAJ" target="_blank"><span class="bi bi-google"></span></a>
+            </div>          
+          </div>
+        </div>      
+  </footer>
+</div>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

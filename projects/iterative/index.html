@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kai Tobias Block</title>
+  <meta name="description" content="Personal website of Kai Tobias Block with information about research projects, publications, and scientific talks.">
+  <meta name="keywords" content="MRI, magnetic resonance, open-source, software, mercure, GRAVIS, Yarra, MRI4ALL, radial sampling, DICOM, AI, GRASP, EMC, MRT, research, science">
+  <meta name="author" content="Kai Tobias Block">
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/site.webmanifest">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body class="custom-scroll">
+
+<div class="flex-wrapper">
+  <div>
+    <nav class="navbar navbar-expand-lg fixed-top pt-4"
+      style="padding-bottom: 20px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);"
+      aria-label="Navbar">
+      <div class="container-xl">
+        <a class="navbar-brand" href="/projects">Kai Tobias Block</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+          aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation"
+          style="padding-inline: 0px;">
+          <input class="menu-trigger hidden" id="togglenav" type="checkbox" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"/>
+          <label class="burger-wrapper" for="togglenav">
+            <div class="hamburger"></div>
+          </label>            
+        </button>        
+        
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/publications/journals">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/talks/selected">Talks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-xl" style="margin-top: 140px;">
+      <div class="row">
+        <div class="col">
+
+<h1>Projects</h1>
+<nav class="nav submenu">
+  <li class="nav-item">
+    <a class="nav-link" href="#" onclick="history.back()"><i class="bi bi-arrow-left me-2"></i>Back</a>
+  </li>
+</nav>
+
+<h3 class="mb-4" style="margin-top: 40px;"> Iterative Image Reconstruction </h3>
+<table class="project-table">
+<tr><td class="project-table-td">Duration:</td><td>2005 - current</td></tr>
+ <tr><td class="project-table-td">Technologies:</td><td>C&#43;&#43;, MATLAB</td></tr> 
+ <tr><td class="project-table-td">Collaborators:</td><td>Thomas Benkert, Ruoxun Zi, Manuel Schneider, Martin Uecker</td></tr> 
+
+</table>
+
+<div class="project-content">
+<p><img class="project_img img-right noborder" src="/img/iterative_figure1.png" style="max-width: 550px; margin-left: 30px;">Magnetic resonance imaging (MRI) offers unique properties for imaging the human body in-vivo, including excellent soft-tissue contrast and absence of ionizing radiation. A key limitation, however, is that the data acquisition is relatively slow compared to other imaging modalities such as ultrasound. Because modern MRI scanners reach physiological limits of the viable switching speed, meaning that faster switching of the gradient fields for spatial encoding could induce (potentially harmful) nerve stimulation, alternative ways have been explored to shorten MRI scans.</p>
+<p>One strategy consists in skipping data during the acquisition, resulting in shorter scan time but incomplete datasets, and to apply mathematical algorithms to compensate for the missing data. Iterative reconstruction algorithms fall into this category and can help in a twofold manner to recover the missing information: First, iterative reconstruction techniques include a signal model (also referred to as &ldquo;forward operation&rdquo;) that is used to fit the measured data. This signal model can be selected based on knowledge about the physical data generation process (e.g., incorporating information about the MRI sequence and hardware setup). By choosing a suited signal model, the parameter space for the solution is narrowed down and the reconstruction problem gets better &ldquo;conditioned&rdquo; (in other words, less unknowns need to be determined for finding the correct solution). Moreover, by selecting an alternative parameterization of the signal model, it is possible to directly derive quantitative information with a physical meaning (e.g., signal relaxation times), which is more efficient than the traditional two-step approach of estimating intermediate images and deriving quantitative data subsequently.</p>
+<div class="iterative_example" style="width: 100%; max-width: 750px; float: left; margin-right: 36px; margin-top: 6px; margin-bottom: 10px;">
+    <div class="row" style="margin: 0px; padding: 0px;">
+        <div class="col" style="margin: 0px; padding: 0px; border-right: 2px solid #FFF;">
+        <img src="/img/iterative_example1a.png" style="width: 100%;">
+        </div>
+        <div class="col" style="margin: 0px; padding: 0px;">
+        <video autoplay loop muted class="mri4all-video" style="margin-bottom: 0px;">
+        <source src="/img/iterative_video1.mp4" type="video/mp4">    
+        </video>
+        </div>
+        <div class="col" style="margin: 0px; padding: 0px; border-left: 2px solid #FFF;">
+        <img src="/img/iterative_example1c.png" style="width: 100%;">
+        </div>
+    </div>
+    <div class="row" style="margin-top: 8px;">
+        <label class="gravis-video-label" for="gravis1">(Left) Conventional reconstruction of incomplete radial data with undersampling artifacts, (middle) iterative reconstruction procedure, and (right) final iterative reconstruction that recovered the true solution from the incomplete data.</label>
+    </div>
+</div>    
+<p>Second, iterative reconstruction techniques can be supplemented with penalty (or &ldquo;regularization&rdquo;) terms. These functions act as a measure for the likelihood of a reconstruction estimate, assigning a high value to unlikely estimates and a low value to likely estimates, so that they steer the iterative algorithm toward the true solution. Thus, by adding penalty functions, prior knowledge about the solution can be introduced, which again leads to improved conditioning of the reconstruction problem and allows recovering the solution from a lower amount of measured data (referred to as &ldquo;undersampling&rdquo;).</p>
+<p>Typically, basic assumptions about the object are utilized, such as the notion that medical objects have a limited number of edges (expressed through the &ldquo;Total Variation&rdquo; function) or that natural images are compressible (expressed through the &ldquo;Wavelet&rdquo; transformation). When furthermore utilizing an MRI acquisition scheme that creates undersampling artifacts with a high value of the penalty function, such as random or radial sampling, the concept is referred to as &ldquo;Compressed Sensing&rdquo;. In recent years, more capable penalty terms have been proposed that are trained on large libraries of medical images using machine-learning techniques (nowadays, often referred to as AI-based image reconstruction).</p>
+<p><img class="project_img img-right noborder" src="/img/iterative_example2.jpg" style="max-width: 700px; margin-left: 30px; margin-top: 0px;">The solution is found using an iterative optimization procedure, which aims to minimize a cost function that measures the quality of the current estimate (similar to what is called &ldquo;Loss Function&rdquo; in machine learning). The cost function typically consists of a term that quantifies how well the current estimate &ldquo;explains&rdquo; the measured data under the selected signal model (the L2 norm is typically used for the comparison), as well as one (or multiple) penalty terms that measure how likely the current estimate appears under the incorporated a priori knowledge. The minimization of the cost-function is then carried out using a numerical optimizer, such as one of the non-linear conjugate-gradient algorithms. This iterative procedure is computationally expensive and was initially too demanding to be usable to routine tasks. However, with advent of broad availability of parallel processors and powerful graphics processing units (GPUs), iterative reconstruction techniques have became viable for real-world applications.</p>
+<p>After demonstrating the concept for image reconstruction from highly undersampled radial MRI data in 2006, numerous extensions have been developed over the years, including approaches for rapid T2 estimation, dynamic contrast-enhanced MRI (aka <a href="/projects/grasp">GRASP</a>), real-time imaging, fat/water separation, fat quantification, T1 mapping, as well as motion management. Most MRI vendors have nowadays adopted the concept and are offering FDA-approved commercial implementations, such as &ldquo;Compressed-Sensing GRASP-VIBE&rdquo;, &ldquo;CS Cardiac Cine&rdquo;, or &ldquo;CS SPACE&rdquo; (Siemens Healthineers), &ldquo;Compressed SENSE&rdquo; (Philips Healthcare), and &ldquo;HyperSense&rdquo; (GE Healthcare).</p>
+<div class="project-spacer"></div>
+<h5 id="references">References</h5>
+<div style="margin-top: 10px;"></div>
+<p>Block KT, Uecker M, Frahm J. Undersampled radial MRI with multiple coils. Iterative image reconstruction using a total variation constraint. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.21236">Magn Reson Med. 2007; 57(6):1086-1098</a></p>
+<p>Block KT, Uecker M, Frahm J. Model-based iterative reconstruction for radial fast spin-echo MRI. <a href="https://ieeexplore.ieee.org/document/5067386/">IEEE Trans Med Imaging. 2009 Nov; 28(11):1759-69</a></p>
+<p>Block KT, Uecker M, Frahm J. Suppression of MRI truncation artifacts using total variation constrained data extrapolation. <a href="https://onlinelibrary.wiley.com/doi/10.1155/2008/184123">Int J Biomed Imaging. 2008; 2008:184123</a></p>
+<p>Feng L, Grimm R, Block KT, et al. Golden-angle radial sparse parallel MRI: combination of compressed sensing, parallel imaging, and golden-angle radial sampling for fast and flexible dynamic volumetric MRI. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.24980">Magn Reson Med. 2014; 72(3):707-717</a></p>
+<p>Ben-Eliezer N, Sodickson DK, Shepherd T, Wiggins GC, Block KT. Accelerated and motion-robust in vivo T2 mapping from radially undersampled data using bloch-simulation-based iterative reconstruction. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.25558">Magn Reson Med. 2016 Mar; 75(3):1346-54</a></p>
+<p>Knoll F, Raya JG, Halloran RO, Baete S, Sigmund E, Bammer R, Block T, Otazo R, Sodickson DK. A model-based reconstruction for undersampled radial spin-echo DTI with variational penalties on the diffusion tensor. <a href="https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/nbm.3258">NMR Biomed. 2015 Mar; 28(3):353-66</a></p>
+<p>Feng L, Axel L, Chandarana H, Block KT, Sodickson DK, Otazo R. XD-GRASP: Golden-angle radial MRI with reconstruction of extra motion-state dimensions using compressed sensing. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.25665">Magn Reson Med. 2016; 75(2):775-788</a></p>
+<p>Benkert T, Feng L, Sodickson DK, Chandarana H, Block KT. Free-breathing volumetric fat/water separation by combining radial sampling, compressed sensing, and parallel imaging. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.26392">Magn Reson Med. 2017 Aug; 78(2):565-576</a></p>
+<p>Maier O, Schoormans J, Schloegl M, Strijkers GJ, Lesch A, Benkert T, Block T, Coolen BF, Bredies K, Stollberger R. Rapid T1 quantification from high resolution 3D data with model-based reconstruction. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.27502">Magn Reson Med. 2019 Mar; 81(3):2072-2089</a></p>
+<p>Schneider M, Benkert T, Solomon E, Nickel D, Fenchel M, Kiefer B, Maier A, Chandarana H, Block KT. Free-breathing fat and R2 * quantification in the liver using a stack-of-stars multi-echo acquisition with respiratory-resolved model-based reconstruction. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.28280">Magn Reson Med. 2020 Nov; 84(5):2592-2605</a></p>
+<p>Feng L, Liu F, Soultanidis G, Liu C, Benkert T, Block KT, Fayad ZA, Yang Y. Magnetization-prepared GRASP MRI for rapid 3D T1 mapping and fat/water-separated T1 mapping. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.28679">Magn Reson Med. 2021 Jul; 86(1):97-114</a></p>
+<p>Zi R, Benkert T, Chandarana H, Lattanzi R, Block KT. Fat suppression using frequency-sweep RF saturation and iterative reconstruction. <a href="https://doi.org/10.1002/mrm.30199">Magn Reson Med. 2024 Jun 18</a></p>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><span class="bi bi-arrow-up"></span></button>
+  <footer class="pb-2" id="footer" style="padding-top: 60px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);">
+      <div class="container-xl" >
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="mb-1">©&nbsp;Copyright&nbsp;2026&nbsp;Kai&nbsp;Tobias&nbsp;Block</p>
+            </div>
+            <div class="col-sm-6 social text-md-end">
+              <a href="https://github.com/tblock79" target="_blank"><span class="bi bi-github"></span></a>
+              <a href="https://www.linkedin.com/in/kai-tobias-block" target="_blank"><span class="bi bi-linkedin"></span></a>
+              <a href="https://scholar.google.com/citations?user=cdpys2YAAAAJ" target="_blank"><span class="bi bi-google"></span></a>
+            </div>          
+          </div>
+        </div>      
+  </footer>
+</div>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

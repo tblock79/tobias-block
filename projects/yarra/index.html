@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kai Tobias Block</title>
+  <meta name="description" content="Personal website of Kai Tobias Block with information about research projects, publications, and scientific talks.">
+  <meta name="keywords" content="MRI, magnetic resonance, open-source, software, mercure, GRAVIS, Yarra, MRI4ALL, radial sampling, DICOM, AI, GRASP, EMC, MRT, research, science">
+  <meta name="author" content="Kai Tobias Block">
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/site.webmanifest">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body class="custom-scroll">
+
+<div class="flex-wrapper">
+  <div>
+    <nav class="navbar navbar-expand-lg fixed-top pt-4"
+      style="padding-bottom: 20px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);"
+      aria-label="Navbar">
+      <div class="container-xl">
+        <a class="navbar-brand" href="/projects">Kai Tobias Block</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+          aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation"
+          style="padding-inline: 0px;">
+          <input class="menu-trigger hidden" id="togglenav" type="checkbox" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"/>
+          <label class="burger-wrapper" for="togglenav">
+            <div class="hamburger"></div>
+          </label>            
+        </button>        
+        
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/publications/journals">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/talks/selected">Talks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-xl" style="margin-top: 140px;">
+      <div class="row">
+        <div class="col">
+
+<h1>Projects</h1>
+<nav class="nav submenu">
+  <li class="nav-item">
+    <a class="nav-link" href="#" onclick="history.back()"><i class="bi bi-arrow-left me-2"></i>Back</a>
+  </li>
+</nav>
+
+<h3 class="mb-4" style="margin-top: 40px;"> Yarra Framework </h3>
+<table class="project-table">
+<tr><td class="project-table-td">Duration:</td><td>2014 - current</td></tr>
+ <tr><td class="project-table-td">Technologies:</td><td>C&#43;&#43;, Qt, Wt, Flask, SQLite</td></tr> 
+ <tr><td class="project-table-td">Collaborators:</td><td>Roy Wiggins</td></tr> 
+ <tr><td class="project-table-td">Website:</td><td><a href="http://yarra-framework.org" target="_blank"> yarra-framework.org </a></td></tr> 
+</table>
+
+<div class="project-content">
+<p>The Yarra Framework is a collection of open-source software tools developed to simplify the process of developing, evaluating, and translating novel magnetic resonance imaging (MRI) reconstruction techniques into clinical practice. It is provided free-of-charge for non-commercial purpose under the GPLv3 license. The tools can be used synergistically together, or they can be used individually as stand-alone components.</p>
+<p><img class="project_img img-right noborder" src="/img/yarra_banner.jpg" style="max-width: 550px;">The &ldquo;Yarra Raw-Data Service&rdquo; (RDS) offers automatic collection of raw k-space data. It runs as background process on the host computers of Siemens MRI scanners and performs a nightly raw-data export of requested scan protocols into project folders on a network share or USB drive. This enables creating extensive libraries of raw data from routine exams without the need to access the scanners during clinical work hours. For example, it has been used to generate the public <a href="https://fastmri.med.nyu.edu/">fastMRI</a> datasets released jointly by NYU &amp; Facebook, which provided a foundation for the development of the first AI-based MRI reconstruction techniques.</p>
+<p>&ldquo;Yarra Archive Search&rdquo; (YAS) can be used to index large amounts of collected cases and provides a convenient web interface that allows searching for raw-data files by project, sequence, or patient information.</p>
+<p><img class="project_img img-left noborder" src="/img/yarra_concept.png" style="max-width: 550px;">&ldquo;YarraServer&rdquo; can be used to automate offline reconstruction of scans on external Linux servers. It enables integration of reconstruction prototypes into the clinical workflow with minimal effort. Cases can be easily submitted from MRI scanners using the &ldquo;Yarra Offline-Reconstruction Task&rdquo; (ORT) client, and from workstations using the &ldquo;Yarra Stand-Alone Client&rdquo; (SAC) or the &ldquo;Yarra WebClient&rdquo;. Reconstruction prototypes can be implemented using any programming language running under Linux, ranging from Matlab over Python to C++, or using frameworks like BART, Gadgetron, and PyTorch. Yarra servers can be controlled and monitored using the &ldquo;Yarra WebGUI&rdquo;, which includes an interface for configuring reconstruction settings. It also provides a packaging system for simple installation of additional processing modules. Yarra has an integrated load-balancing and routing mechanism for distributing jobs across multiple servers. In addition, the &ldquo;Yarra Router&rdquo; software can be used for more advanced load balancing when using a cluster of servers. To ensure reliability, Yarra has an email notification system and can be monitored with the &ldquo;Yarra LogServer&rdquo; software. The status of reconstruction jobs can furthermore be queried with the &ldquo;YarraTech&rdquo; web interface, which aggregates status data from all servers and summarizes the information for clinical staff.</p>
+<p><img class="project_img img-right" src="/img/yarra_ui.gif" style="max-width: 720px; margin-left: 30px;">This software infrastructure has enabled applying the <a href="/projects/grasp/">GRASP</a> DCE-MRI technique in over 200,000 clinical patient exams at NYU Langone Health to date.</p>
+<p>As additional functionality, the Yarra Framework can be used to automatically collect clinical workflow data through the &ldquo;Yarra LogServer&rdquo; extension. Collected workflow data can be analyzed with common Business Intelligence (BI) software and utilized to make informed decisions for improving the clinical efficiency and examination quality. Moreover, the &ldquo;Yarra Mailbox&rdquo; software can be used to deliver messages to the console of MRI scanners and to request a response. Combined with the <a href="/projects/mercure">mercure</a> DICOM orchestrator, this can be used to alert technicians about image-quality issues or about the results of automated analysis algorithms.</p>
+<div class="project-spacer"></div>
+<h5 id="more-information">More information</h5>
+<div class="projects-video-div ratio ratio-16x9">
+    <iframe class="talks-video embed-responsive-item" src="https://www.youtube.com/embed/EjpE9IWXEkE?rel=0&amp;hd=1" allowfullscreen></iframe>
+</div>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><span class="bi bi-arrow-up"></span></button>
+  <footer class="pb-2" id="footer" style="padding-top: 60px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);">
+      <div class="container-xl" >
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="mb-1">©&nbsp;Copyright&nbsp;2026&nbsp;Kai&nbsp;Tobias&nbsp;Block</p>
+            </div>
+            <div class="col-sm-6 social text-md-end">
+              <a href="https://github.com/tblock79" target="_blank"><span class="bi bi-github"></span></a>
+              <a href="https://www.linkedin.com/in/kai-tobias-block" target="_blank"><span class="bi bi-linkedin"></span></a>
+              <a href="https://scholar.google.com/citations?user=cdpys2YAAAAJ" target="_blank"><span class="bi bi-google"></span></a>
+            </div>          
+          </div>
+        </div>      
+  </footer>
+</div>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

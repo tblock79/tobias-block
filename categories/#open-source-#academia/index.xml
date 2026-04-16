@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>#Open-Source #Academia on Kai Tobias Block</title>
+    <link>http://localhost:1313/categories/%23open-source-%23academia/</link>
+    <description>Recent content in #Open-Source #Academia on Kai Tobias Block</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/categories/%23open-source-%23academia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CBIHub</title>
+      <link>http://localhost:1313/projects/cbihub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cbihub/</guid>
+      <description>CBIHub is a custom-developed intranet portal to improve the communication and knowledge exchange within the Center for Biomedical Imaging at NYU Langone Health. The need for the portal arose from the significant growth of the center over the last decade, which nowadays includes over 200 associated staff members who are located in different buildings in the NYC area.&#xA;To access the portal, CBI members must authenticate with their institutional Kerberos ID (SSO) and are directed to an overview page that summarizes all updates and news related to the center, including announcements, blog entries, events scheduled during the week, new colleagues, upcoming research seminars, and staff surveys.</description>
+    </item>
+    <item>
+      <title>measure</title>
+      <link>http://localhost:1313/projects/measure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/measure/</guid>
+      <description>measure is a software suite for conducting science experiments in STEM classes at the highschool and university level. It was developed on behalf of PHYWE Systeme GmbH, Göttingen. measure comprises a user-friendly Windows software for visualizing and analyzing acquired data, as well as numerous plugins for different PHYWE instruments and experimental setups. The base software can be used free-of-charge, while the device plugins require a paid license. The supported devices range from generic handheld instruments for measuring various physical units, over the modular Cobra3 system for computer-assisted experiments, to highly specialized instruments such as the PHYWE X-Ray Unit and a device for the Frank-Hertz-Experiment.</description>
+    </item>
+  </channel>
+</rss>

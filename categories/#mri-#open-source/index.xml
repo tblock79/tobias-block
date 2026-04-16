@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>#Mri #Open-Source on Kai Tobias Block</title>
+    <link>http://localhost:1313/categories/%23mri-%23open-source/</link>
+    <description>Recent content in #Mri #Open-Source on Kai Tobias Block</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/categories/%23mri-%23open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mtrk</title>
+      <link>http://localhost:1313/projects/mtrk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/mtrk/</guid>
+      <description>mtrk is a novel concept for simplifying the development, application, and distribution of MRI pulse sequences, which is currently under active development. It aims to tackle the major limitation that pulse sequences for clinical MRI systems are typically programmed as compiled binary libraries, which are then executed on the MRI scanners to generate the DSP instructions. Such libraries can only be written using vendor-provided proprietary SDKs and need to be installed locally on each scanner.</description>
+    </item>
+  </channel>
+</rss>

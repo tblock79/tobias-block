@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kai Tobias Block</title>
+  <meta name="description" content="Personal website of Kai Tobias Block with information about research projects, publications, and scientific talks.">
+  <meta name="keywords" content="MRI, magnetic resonance, open-source, software, mercure, GRAVIS, Yarra, MRI4ALL, radial sampling, DICOM, AI, GRASP, EMC, MRT, research, science">
+  <meta name="author" content="Kai Tobias Block">
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/site.webmanifest">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body class="custom-scroll">
+
+<div class="flex-wrapper">
+  <div>
+    <nav class="navbar navbar-expand-lg fixed-top pt-4"
+      style="padding-bottom: 20px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);"
+      aria-label="Navbar">
+      <div class="container-xl">
+        <a class="navbar-brand" href="/projects">Kai Tobias Block</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+          aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation"
+          style="padding-inline: 0px;">
+          <input class="menu-trigger hidden" id="togglenav" type="checkbox" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"/>
+          <label class="burger-wrapper" for="togglenav">
+            <div class="hamburger"></div>
+          </label>            
+        </button>        
+        
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+                href="/projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/publications/journals">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/talks/selected">Talks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page"
+                href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-xl" style="margin-top: 140px;">
+      <div class="row">
+        <div class="col">
+
+<h1>Projects</h1>
+<nav class="nav submenu">
+  <li class="nav-item">
+    <a class="nav-link" href="#" onclick="history.back()"><i class="bi bi-arrow-left me-2"></i>Back</a>
+  </li>
+</nav>
+
+<h3 class="mb-4" style="margin-top: 40px;"> Non-Cartesian MRI </h3>
+<table class="project-table">
+<tr><td class="project-table-td">Duration:</td><td>2002 - current</td></tr>
+ <tr><td class="project-table-td">Technologies:</td><td>C&#43;&#43;, IDEA, MATLAB</td></tr> 
+ <tr><td class="project-table-td">Collaborators:</td><td>Thomas Benkert, Ruoxun Zi, Eddy Solomon</td></tr> 
+
+</table>
+
+<div class="project-content">
+<div style="flex: right; border: none;">
+<div class="liveview-video" style="border: none; max-width: 750px; margin-left: 30px;  margin-bottom: 20px; margin-right: 0px; margin-top: 4px;">
+    <video autoplay loop muted style="width: 100%; border: none; background-color: #FFF; border: none; outline: 2px solid white;
+    outline-offset: -2px;">
+    <source src="/img/noncartesian_motion.mp4" type="video/mp4">
+    </video>
+    <div class="row" style="margin-top: 0px;">
+        <label class="gravis-video-label">Illustration of the motion sensitivity of phase encoding: Object motion translates into bands of "ghosting" artifacts due to local violation of the Nyquist limit.</label>
+    </div>
+</div>    
+</div>
+<p>Most techniques for magnetic resonance imaging (MRI) sample the data space (&ldquo;k-space&rdquo;) using a row-by-row acquisition pattern known as &ldquo;phase-encoding scheme&rdquo;. This scheme is easy to implement, it is robust toward timing inaccuracies, and it offers various advantages including simplicity of the image reconstruction, which - in the basic form - just requires an inverse Fast Fourier Transformation (FFT) of the acquired data. However, a major disadvantage of the phase-encoding scheme consists in its high sensitivity to motion and other phase-related signal perturbations (e.g., from blood flow), which results in &ldquo;ghosting&rdquo; artifacts that are commonly seen in MRI scans.</p>
+<div class="iterative_example" style="width: 100%; max-width: 500px; float: left; margin-right: 40px; margin-top: 6px; margin-bottom: 20px;">
+    <div class="d-flex flex-row">
+        <img src="/img/noncartesian_scheme1.gif" style="max-height: 200px; max-width: 200px;  margin-right: 2px;">
+        <img src="/img/noncartesian_scheme1b.jpg" style="max-height: 200px; max-width: 314px;">
+    </div>
+    <div class="d-flex flex-row" style="margin-top: 4px;">
+        <img src="/img/noncartesian_scheme2.gif" style="max-height: 200px; max-width: 200px;  margin-right: 2px;">
+        <img src="/img/noncartesian_scheme2b.jpg" style="max-height: 200px; max-width: 314px;">
+    </div>
+    <div class="row" style="margin-top: 6px;">
+        <label class="gravis-video-label">Comparison of an abdominal scan acquired during free breathing with identical parameters using (top) phase encoding and (bottom) radial sampling.</label>
+    </div>    
+</div>
+<p>The high sensitivity to motion can be reduced through the use of alternative sampling geometries, commonly referred to as &ldquo;non-Cartesian MRI&rdquo;. The data space in MRI (&ldquo;k-space&rdquo;), in essence, corresponds to the the object&rsquo;s Fourier transform, which can be traversed by switching time-varying magnetic gradient fields (generated by three &ldquo;gradient coils&rdquo; that are integrated into the MRI scanners). Depending on the time course of the gradient fields switched during the scan, different k-space sampling geometries can be generated. Prominent examples for non-Cartesian patterns include radial sampling, which acquires the Fourier data along a spoke-wheel-like trajectory, and sampling along spiral trajectories.</p>
+<p>While the idea of using non-Cartesian trajectories has been known since the early days of MRI, the first MRI systems did not provide the timing accuracy required for generating arbitrary gradient fields. For this reason, phase encoding became the preferred acquisition scheme. However, with improvements in the scanner hardware and the development of correction methods for gradient delays, it became feasible to use non-Cartesian sampling on clinical MRI systems. Nowadays, non-Cartesian approaches such as the <a href="/projects/starvibe">StarVIBE</a> sequence are used routinely for free-breathing imaging of patients unable to hold breath.</p>
+<div class="project_img img-right noborder noncartesian-project_img" style="max-width: 240px; margin-bottom: 20px; margin-left: 30px;">
+    <div class="row">
+    <img src="/img/noncartesian_average.gif" >
+    <div style="margin-top: 0px;">
+        <label class="gravis-video-label" style="margin-top: 6px;">Radial sampling is motion robust due to inherent data averaging and varying readout directions.</label>
+    </div>
+    </div>
+</div>
+<p>In the case of radial sampling, the higher robustness to motion results from two properties of the sampling geometry. First, the overlap of the radial spokes in the center of k-space leads to a data-averaging effect, so that sudden movements get &ldquo;averaged out&rdquo; when scanning over longer periods of time. Second, the varying read-out directions of the spokes prevent a violation of the Nyquist limit if individual spokes are affected by phase effects. Therefore, appearance of ghosting artifacts is impossible. It should be noted that scans acquired with non-Cartesian sampling are still affected by motion effects, such as blurring often seen at the tip of the liver in free-breathing scans. However, these effects are typically confined to local regions impacted by motion and do not propagate over the whole image as in phase-encoded scans. Therefore, the magnitude of the artifacts is usually much smaller.</p>
+<div class="noncartesian-slideshow" style="float: left; margin-top: 4px; margin-bottom: 40px; max-width: 500px; margin-right: 30px; width: 100%;">
+    <div class="row" style="position: relative; aspect-ratio : 2.1 / 1; ">
+        <div class="col" style=" margin-left: 12px; position: relative; border-right: 2px solid #fff;">      
+            
+            <img src="/img/noncartesian_undersample1_1.jpg" alt="" class="noncartesian_slideshowimage noncartesian_hidden" style="width: 100%; max-width: 250px; z-index: 1;" id="noncartesian_undersample1_1">
+            
+            <img src="/img/noncartesian_undersample1_2.jpg" alt="" class="noncartesian_slideshowimage noncartesian_hidden" style="width: 100%; max-width: 250px; z-index: 2;" id="noncartesian_undersample1_2">
+            
+            <img src="/img/noncartesian_undersample1_3.jpg" alt="" class="noncartesian_slideshowimage noncartesian_hidden" style="width: 100%; max-width: 250px; z-index: 3;" id="noncartesian_undersample1_3">
+            
+            <img src="/img/noncartesian_undersample1_4.jpg" alt="" class="noncartesian_slideshowimage noncartesian_hidden" style="width: 100%; max-width: 250px; z-index: 4;" id="noncartesian_undersample1_4">
+            
+            <img src="/img/noncartesian_undersample1_5.jpg" alt="" class="noncartesian_slideshowimage noncartesian_hidden" style="width: 100%; max-width: 250px; z-index: 5;" id="noncartesian_undersample1_5">
+            
+            <img src="/img/noncartesian_undersample1_6.jpg" alt="" class="noncartesian_slideshowimage noncartesian_hidden" style="width: 100%; max-width: 250px; z-index: 6;" id="noncartesian_undersample1_6">
+                              
+        </div>
+        <div class="col" style="margin-right: 12px; position: relative; ">      
+            
+            <img src="/img/noncartesian_undersample2_1.png" alt="" class="noncartesian_slideshowimage noncartesian_hidden" style="width: 100%; max-width: 250px; z-index: 1;" id="noncartesian_undersample2_1">
+            
+            <img src="/img/noncartesian_undersample2_2.png" alt="" class="noncartesian_slideshowimage noncartesian_hidden" style="width: 100%; max-width: 250px; z-index: 2;" id="noncartesian_undersample2_2">
+            
+            <img src="/img/noncartesian_undersample2_3.png" alt="" class="noncartesian_slideshowimage noncartesian_hidden" style="width: 100%; max-width: 250px; z-index: 3;" id="noncartesian_undersample2_3">
+            
+            <img src="/img/noncartesian_undersample2_4.png" alt="" class="noncartesian_slideshowimage noncartesian_hidden" style="width: 100%; max-width: 250px; z-index: 4;" id="noncartesian_undersample2_4">
+            
+            <img src="/img/noncartesian_undersample2_5.png" alt="" class="noncartesian_slideshowimage noncartesian_hidden" style="width: 100%; max-width: 250px; z-index: 5;" id="noncartesian_undersample2_5">
+            
+            <img src="/img/noncartesian_undersample2_6.png" alt="" class="noncartesian_slideshowimage noncartesian_hidden" style="width: 100%; max-width: 250px; z-index: 6;" id="noncartesian_undersample2_6">
+                                      
+        </div>
+    </div>
+    <div class="row col" style="margin-top: 6px; margin-left: 2px;">
+        <label class="gravis-video-label">Undersampling of radial data leads to texture-alike streak artifacts while the object remains largely visible even for high undersampling factors.</label>
+    </div>       
+</div>
+
+<script>
+var counter = 1;
+
+function toggle()
+{
+    old_name=counter;
+    counter = counter + 1;
+    if (counter > 6)
+    {
+        counter = 1;
+    }
+    new_name=counter;
+    document.getElementById("noncartesian_undersample1_"+old_name).classList.remove("noncartesian_show");
+    document.getElementById("noncartesian_undersample1_"+new_name).classList.add("noncartesian_show");   
+    document.getElementById("noncartesian_undersample2_"+old_name).classList.remove("noncartesian_show");
+    document.getElementById("noncartesian_undersample2_"+new_name).classList.add("noncartesian_show");   
+    setTimeout(toggle, 1000);
+}
+
+document.getElementById("noncartesian_undersample1_1").classList.add("noncartesian_show");   
+document.getElementById("noncartesian_undersample2_1").classList.add("noncartesian_show");   
+setTimeout(toggle, 1000);
+</script>
+
+<p>Besides the higher motion robustness, non-Cartesian sequences offer additional unique properties that are advantageous for specific applications. Of particular interest is the undersampling behavior of radial trajectories. Unlike phase-encoded scans that show overlapped object copies (&ldquo;aliasing&rdquo;) when skipping k-space lines, radial sequences show streak artifacts when decreasing the number of spokes. The streak artifacts appear as &ldquo;texture&rdquo; added on top of the object, so that the object remains largely visible - even when significantly reducing the data amount. Moreover, the streak artifacts have a distinct visual appearance and are easy to identify (in part because radiologists are used to seeing similar artifacts in CT imaging). This makes radial sampling very attractive for applications that require <a href="/projects/liveview">rapid</a> scan speed as the number of acquired spokes can be finely adjusted to balance between speed and image quality. The distinct undersampling pattern makes it also well-suited for the combination with <a href="/projects/iterative">iterative reconstruction</a> (often referred to as Compressed Sensing).</p>
+<div class="project-spacer"></div>
+<h5 id="references">References</h5>
+<div style="margin-top: 10px;"></div>
+<p>Block KT, Chandarana H, Milla S, Bruno M, Mulholland T, Fatterpekar G, Hagiwara M, Grimm R, Geppert C, Kiefer B, Sodickson DK. Towards Routine Clinical Use of Radial Stack-of-Stars 3D Gradient-Echo Sequences for Reducing Motion Sensitivity. <a href="https://i-mri.org/pdf/10.13104/jksmrm.2014.18.2.87">J Korean Soc Magn Reson Med. 2014 Jun; 18(2):87-106</a></p>
+<p>Block KT, Uecker M. Simple Method for Adaptive Gradient-Delay Compensation in Radial MRI, <a href="https://cds.ismrm.org/protected/11MProceedings/PDFfiles/2816.pdf">In Proc. Intl. Soc. Mag. Reson. Med. 19 (2011): 2816</a></p>
+<p>Zhang S, Block KT, Frahm J. Magnetic resonance imaging in real time: advances using radial FLASH. <a href="https://onlinelibrary.wiley.com/doi/10.1002/jmri.21987">J Magn Reson Imaging. 2010 Jan; 31(1):101-9</a></p>
+<p>Block KT, Frahm J. Radial single-shot STEAM MRI. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.21401">Magn Reson Med. 2008 Apr; 59(4):686-91</a></p>
+<p>Block KT, Frahm J. Spiral imaging: a critical appraisal. <a href="https://onlinelibrary.wiley.com/doi/10.1002/jmri.20320">J Magn Reson Imaging. 2005 Jun; 21(6):657-68</a></p>
+<p>Benkert T, Mugler JP 3rd, Rigie DS, Sodickson DK, Chandarana H, Block KT. Hybrid T2- and T1-weighted radial acquisition for free-breathing abdominal examination. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.27200">Magn Reson Med. 2018 Nov; 80(5):1935-1948</a></p>
+<p>Grimm R, Fürst S, Souvatzoglou M, Forman C, Hutter J, Dregely I, Ziegler SI, Kiefer B, Hornegger J, Block KT, Nekolla SG. Self-gated MRI motion modeling for respiratory motion compensation in integrated PET/MRI. <a href="https://www.sciencedirect.com/science/article/pii/S1361841514001376">Med Image Anal. 2015 Jan;1 9(1):110-20</a></p>
+<p>Solomon E, Lotan E, Zan E, Sodickson DK, Block KT, Chandarana H. MP-RAVE: IR-Prepared T1-Weighted Radial Stack-of-Stars 3D GRE imaging with retrospective motion correction. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.29614">Magn Reson Med. 2023 Jul; 90(1):202-210</a></p>
+<p>Maatman IT, Schulz J, Ypma S, Block KT, Schmitter S, Hermans JJ, Smit EJ, Maas MC, Scheenen TWJ. Free-breathing high-resolution respiratory-gated radial stack-of-stars magnetic resonance imaging of the upper abdomen at 7 T. <a href="https://doi.org/10.1002/nbm.5180">NMR Biomed. 2024 May 22:e5180</a></p>
+<p>Solomon E, Rigie DS, Vahle T, Paška J, Bollenbeck J, Sodickson DK, Boada FE, Block KT, Chandarana H. Free-breathing radial imaging using a pilot-tone radiofrequency transmitter for detection of respiratory motion. <a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.28616">Magn Reson Med. 2021 May; 85(5):2672-2685</a></p>
+<p>Bauer RW, Radtke I, Block KT, Larson MC, Kerl JM, Hammerstingl R, Graf TG, Vogl TJ, Zhang S. True real-time cardiac MRI in free breathing without ECG synchronization using a novel sequence with radial k-space sampling and balanced SSFP contrast mode. <a href="https://link.springer.com/article/10.1007/s10554-013-0183-0">Int J Cardiovasc Imaging. 2013 Jun; 29(5):1059-67</a></p>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><span class="bi bi-arrow-up"></span></button>
+  <footer class="pb-2" id="footer" style="padding-top: 60px; background-color: #FFFE; backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);">
+      <div class="container-xl" >
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="mb-1">©&nbsp;Copyright&nbsp;2026&nbsp;Kai&nbsp;Tobias&nbsp;Block</p>
+            </div>
+            <div class="col-sm-6 social text-md-end">
+              <a href="https://github.com/tblock79" target="_blank"><span class="bi bi-github"></span></a>
+              <a href="https://www.linkedin.com/in/kai-tobias-block" target="_blank"><span class="bi bi-linkedin"></span></a>
+              <a href="https://scholar.google.com/citations?user=cdpys2YAAAAJ" target="_blank"><span class="bi bi-google"></span></a>
+            </div>          
+          </div>
+        </div>      
+  </footer>
+</div>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
