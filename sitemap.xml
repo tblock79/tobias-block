@@ -2,85 +2,85 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/projects/mercure/</loc>
+    <loc>https://tobias-block.net/projects/mercure/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/mri4all/</loc>
+    <loc>https://tobias-block.net/projects/mri4all/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/gravis/</loc>
+    <loc>https://tobias-block.net/projects/gravis/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/grasp/</loc>
+    <loc>https://tobias-block.net/projects/grasp/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/yarra/</loc>
+    <loc>https://tobias-block.net/projects/yarra/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/liveview/</loc>
+    <loc>https://tobias-block.net/projects/liveview/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/cbihub/</loc>
+    <loc>https://tobias-block.net/projects/cbihub/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/yarralogserver/</loc>
+    <loc>https://tobias-block.net/projects/yarralogserver/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/yarracloud/</loc>
+    <loc>https://tobias-block.net/projects/yarracloud/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/emc/</loc>
+    <loc>https://tobias-block.net/projects/emc/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/noncartesian/</loc>
+    <loc>https://tobias-block.net/projects/noncartesian/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/mtrk/</loc>
+    <loc>https://tobias-block.net/projects/mtrk/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/cai2r/</loc>
+    <loc>https://tobias-block.net/projects/cai2r/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/iterative/</loc>
+    <loc>https://tobias-block.net/projects/iterative/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/starvibe/</loc>
+    <loc>https://tobias-block.net/projects/starvibe/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/measure/</loc>
+    <loc>https://tobias-block.net/projects/measure/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://tobias-block.net/</loc>
     <lastmod>2024-06-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/publications/</loc>
+    <loc>https://tobias-block.net/publications/</loc>
     <lastmod>2024-06-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/publications/conferences/</loc>
+    <loc>https://tobias-block.net/publications/conferences/</loc>
     <lastmod>2024-06-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/publications/journals/</loc>
+    <loc>https://tobias-block.net/publications/journals/</loc>
     <lastmod>2024-06-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/publications/other/</loc>
+    <loc>https://tobias-block.net/publications/other/</loc>
     <lastmod>2024-06-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://tobias-block.net/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://tobias-block.net/projects/</loc>
   </url><url>
-    <loc>http://localhost:1313/resume/</loc>
+    <loc>https://tobias-block.net/resume/</loc>
   </url><url>
-    <loc>http://localhost:1313/resume/education/</loc>
+    <loc>https://tobias-block.net/resume/education/</loc>
   </url><url>
-    <loc>http://localhost:1313/resume/skills/</loc>
+    <loc>https://tobias-block.net/resume/skills/</loc>
   </url><url>
-    <loc>http://localhost:1313/resume/work/</loc>
+    <loc>https://tobias-block.net/resume/work/</loc>
   </url><url>
-    <loc>http://localhost:1313/talks/</loc>
+    <loc>https://tobias-block.net/talks/</loc>
   </url><url>
-    <loc>http://localhost:1313/talks/invited/</loc>
+    <loc>https://tobias-block.net/talks/invited/</loc>
   </url><url>
-    <loc>http://localhost:1313/talks/selected/</loc>
+    <loc>https://tobias-block.net/talks/selected/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/%23academia/</loc>
+    <loc>https://tobias-block.net/categories/%23academia/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/%23mri/</loc>
+    <loc>https://tobias-block.net/categories/%23mri/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/%23mri-%23open-source/</loc>
+    <loc>https://tobias-block.net/categories/%23mri-%23open-source/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/%23open-source/</loc>
+    <loc>https://tobias-block.net/categories/%23open-source/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/%23open-source-%23academia/</loc>
+    <loc>https://tobias-block.net/categories/%23open-source-%23academia/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/%23open-source-%23mri/</loc>
+    <loc>https://tobias-block.net/categories/%23open-source-%23mri/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://tobias-block.net/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://tobias-block.net/tags/</loc>
   </url>
 </urlset>

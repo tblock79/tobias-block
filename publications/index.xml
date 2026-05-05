@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kai Tobias Block</title>
-    <link>http://localhost:1313/publications/</link>
+    <link>https://tobias-block.net/publications/</link>
     <description>Recent content on Kai Tobias Block</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tobias-block.net/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conferences</title>
-      <link>http://localhost:1313/publications/conferences/</link>
+      <link>https://tobias-block.net/publications/conferences/</link>
       <pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/conferences/</guid>
+      <guid>https://tobias-block.net/publications/conferences/</guid>
       <description>2025 Correction of Respiratory Motion in Free-Breathing DCE-MRI using a Pilot-Tone Coil, In Proc. Intl. Soc. Mag. Reson. Med. 33 (2025): 1163&#xA;Motion detection using Doppler radar: Towards subject- and organ-specific motion correction, In Proc. Intl. Soc. Mag. Reson. Med. 33 (2025): 10301&#xA;Towards Free-Breathing Nodal Staging of Upper Abdominal Cancers: MRI-Visible Nodal Size Distributions and Uptake of USPIO Nanoparticles In Proc. Intl. Soc. Mag. Reson. Med. 33 (2025): 10214</description>
     </item>
     <item>
       <title>Journals</title>
-      <link>http://localhost:1313/publications/journals/</link>
+      <link>https://tobias-block.net/publications/journals/</link>
       <pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/journals/</guid>
-      <description>2026 Correction of Respiratory Motion in Free-Breathing DCE-MRI using a Pilot-Tone Coil&#xA;Ruoxun Zi, Mario Bacher, Peter Speier, Hersh Chandarana, Riccardo Lattanzi, Kai Tobias Block&#xA;NMR in Biomedicine, 2026, in press&#xA;2025 mtrk - A Flexible Environment for Developing Open-Source MRI Pulse Sequences&#xA;Anais Artiges, Amanpreet Singh Saimbhi, Carlos Castillo-Passi, Riccardo Lattanzi, Kai Tobias Block&#xA;Magnetic Resonance in Medicine, 2025, advance online publication&#xA;3 Tesla Stack-of-Stars Echo Unbalanced T1 Relaxation-Enhanced Steady-State MRI for Brain Tumor Imaging: Post-Contrast Comparison with MPRAGE</description>
+      <guid>https://tobias-block.net/publications/journals/</guid>
+      <description>2026 Single-shot 2D Radial Echo Planar Imaging for Multi-Contrast Functional MRI&#xA;Christoph A. Rettenmeier, Zidan Yu, Krystalyn Edwards-Calma, Tobias Block, V. Andrew Stenger&#xA;Magnetic Resonance in Medicine, 2026, in press&#xA;Correction of Respiratory Motion in Free-Breathing DCE-MRI using a Pilot-Tone Coil&#xA;Ruoxun Zi, Mario Bacher, Peter Speier, Hersh Chandarana, Riccardo Lattanzi, Kai Tobias Block&#xA;NMR in Biomedicine, 2026, in press&#xA;2025 mtrk - A Flexible Environment for Developing Open-Source MRI Pulse Sequences</description>
     </item>
     <item>
       <title>Other</title>
-      <link>http://localhost:1313/publications/other/</link>
+      <link>https://tobias-block.net/publications/other/</link>
       <pubDate>Wed, 19 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/other/</guid>
+      <guid>https://tobias-block.net/publications/other/</guid>
       <description>Theses Advanced Methods for Radial Data Sampling in Magnetic Resonance Imaging Institut für Numerische und Angewandte Mathematik der Georg-August-Universität Göttingen PhD thesis, 2008 Available online&#xA;Spiralförmige Abtastung des k-Raumes bei der Magnetresonanz-Tomographie Drittes Physikalisches Institut der Georg-August-Universität zu Göttingen Diploma thesis, 2004 Available online&#xA;Articles GRASP MRI: A Decade of Innovation from Bench to Bedside&#xA;Li Feng, Kai Tobias Block, Hersh Chandarana, Daniel K Sodickson&#xA;MAGNETOM Flash 6/2025: 22-35&#xA;Free-breathing DCE-MRI of the Kidney using GRASP</description>
     </item>
   </channel>

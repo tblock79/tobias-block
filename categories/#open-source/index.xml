@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>#Open-Source on Kai Tobias Block</title>
-    <link>http://localhost:1313/categories/%23open-source/</link>
+    <link>https://tobias-block.net/categories/%23open-source/</link>
     <description>Recent content in #Open-Source on Kai Tobias Block</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/categories/%23open-source/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tobias-block.net/categories/%23open-source/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mercure</title>
-      <link>http://localhost:1313/projects/mercure/</link>
+      <link>https://tobias-block.net/projects/mercure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/mercure/</guid>
+      <guid>https://tobias-block.net/projects/mercure/</guid>
       <description>mercure is a flexible open-source DICOM orchestration platform, aimed to facilitate the clinical deployment of AI-based image processing algorithms, which poses a major obstacle for clinical real-world application of machine-learning techniques. It offers an intuitive web-based user interface as well as extensive monitoring options, making it suitable for routine applications that require high availability.&#xA;Received studies, transferred either from imaging devices such as CT or MRI scanners or from departmental image archives (PACS), are processed according to easily definable processing rules.</description>
     </item>
   </channel>
